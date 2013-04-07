@@ -1,0 +1,953 @@
+###############################################################################
+#                                                                             #
+# IAR ELF Linker V6.40.2.53884/W32 for ARM              16/Mar/2013  09:48:26 #
+# Copyright 2007-2012 IAR Systems AB.                                         #
+#                                                                             #
+#    Output file  =  E:\_PY\_work\_GPS\asf-3.7.3\common\services\usb\class\ms #
+#                    c\device\example\sam3x8h_sam3x_ek\iar\Debug\Exe\device_e #
+#                    xample_flash.out                                         #
+#    Map file     =  E:\_PY\_work\_GPS\asf-3.7.3\common\services\usb\class\ms #
+#                    c\device\example\sam3x8h_sam3x_ek\iar\Debug\List\device_ #
+#                    example_flash.map                                        #
+#    Command line =  E:\_PY\_work\_GPS\asf-3.7.3\common\components\memory\nan #
+#                    d_flash\nand_flash_ebi\ftl_lib\iar\lib_nand_flash_cortex #
+#                    m3.a E:\_PY\_work\_GPS\asf-3.7.3\common\services\usb\cla #
+#                    ss\msc\device\example\sam3x8h_sam3x_ek\iar\Debug\Obj\ctr #
+#                    l_access.o E:\_PY\_work\_GPS\asf-3.7.3\common\services\u #
+#                    sb\class\msc\device\example\sam3x8h_sam3x_ek\iar\Debug\O #
+#                    bj\cycle_counter.o E:\_PY\_work\_GPS\asf-3.7.3\common\se #
+#                    rvices\usb\class\msc\device\example\sam3x8h_sam3x_ek\iar #
+#                    \Debug\Obj\dmac.o E:\_PY\_work\_GPS\asf-3.7.3\common\ser #
+#                    vices\usb\class\msc\device\example\sam3x8h_sam3x_ek\iar\ #
+#                    Debug\Obj\ecc-sw.o E:\_PY\_work\_GPS\asf-3.7.3\common\se #
+#                    rvices\usb\class\msc\device\example\sam3x8h_sam3x_ek\iar #
+#                    \Debug\Obj\exceptions.o E:\_PY\_work\_GPS\asf-3.7.3\comm #
+#                    on\services\usb\class\msc\device\example\sam3x8h_sam3x_e #
+#                    k\iar\Debug\Obj\hsmci.o E:\_PY\_work\_GPS\asf-3.7.3\comm #
+#                    on\services\usb\class\msc\device\example\sam3x8h_sam3x_e #
+#                    k\iar\Debug\Obj\init.o E:\_PY\_work\_GPS\asf-3.7.3\commo #
+#                    n\services\usb\class\msc\device\example\sam3x8h_sam3x_ek #
+#                    \iar\Debug\Obj\interrupt_sam_nvic.o                      #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\common\services\usb\class\ms #
+#                    c\device\example\sam3x8h_sam3x_ek\iar\Debug\Obj\led.o    #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\common\services\usb\class\ms #
+#                    c\device\example\sam3x8h_sam3x_ek\iar\Debug\Obj\main.o   #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\common\services\usb\class\ms #
+#                    c\device\example\sam3x8h_sam3x_ek\iar\Debug\Obj\memories #
+#                    _initialization_sam.o E:\_PY\_work\_GPS\asf-3.7.3\common #
+#                    \services\usb\class\msc\device\example\sam3x8h_sam3x_ek\ #
+#                    iar\Debug\Obj\nand_flash_ecc_sw.o                        #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\common\services\usb\class\ms #
+#                    c\device\example\sam3x8h_sam3x_ek\iar\Debug\Obj\nand_fla #
+#                    sh_mem.o E:\_PY\_work\_GPS\asf-3.7.3\common\services\usb #
+#                    \class\msc\device\example\sam3x8h_sam3x_ek\iar\Debug\Obj #
+#                    \nand_flash_model.o E:\_PY\_work\_GPS\asf-3.7.3\common\s #
+#                    ervices\usb\class\msc\device\example\sam3x8h_sam3x_ek\ia #
+#                    r\Debug\Obj\nand_flash_raw_nfc.o                         #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\common\services\usb\class\ms #
+#                    c\device\example\sam3x8h_sam3x_ek\iar\Debug\Obj\nand_fla #
+#                    sh_spare_scheme.o E:\_PY\_work\_GPS\asf-3.7.3\common\ser #
+#                    vices\usb\class\msc\device\example\sam3x8h_sam3x_ek\iar\ #
+#                    Debug\Obj\pio.o E:\_PY\_work\_GPS\asf-3.7.3\common\servi #
+#                    ces\usb\class\msc\device\example\sam3x8h_sam3x_ek\iar\De #
+#                    bug\Obj\pio_handler.o E:\_PY\_work\_GPS\asf-3.7.3\common #
+#                    \services\usb\class\msc\device\example\sam3x8h_sam3x_ek\ #
+#                    iar\Debug\Obj\pmc.o E:\_PY\_work\_GPS\asf-3.7.3\common\s #
+#                    ervices\usb\class\msc\device\example\sam3x8h_sam3x_ek\ia #
+#                    r\Debug\Obj\sd_mmc.o E:\_PY\_work\_GPS\asf-3.7.3\common\ #
+#                    services\usb\class\msc\device\example\sam3x8h_sam3x_ek\i #
+#                    ar\Debug\Obj\sd_mmc_mem.o E:\_PY\_work\_GPS\asf-3.7.3\co #
+#                    mmon\services\usb\class\msc\device\example\sam3x8h_sam3x #
+#                    _ek\iar\Debug\Obj\sleep.o E:\_PY\_work\_GPS\asf-3.7.3\co #
+#                    mmon\services\usb\class\msc\device\example\sam3x8h_sam3x #
+#                    _ek\iar\Debug\Obj\sleepmgr.o                             #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\common\services\usb\class\ms #
+#                    c\device\example\sam3x8h_sam3x_ek\iar\Debug\Obj\smc.o    #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\common\services\usb\class\ms #
+#                    c\device\example\sam3x8h_sam3x_ek\iar\Debug\Obj\startup_ #
+#                    sam3x.o E:\_PY\_work\_GPS\asf-3.7.3\common\services\usb\ #
+#                    class\msc\device\example\sam3x8h_sam3x_ek\iar\Debug\Obj\ #
+#                    sysclk.o E:\_PY\_work\_GPS\asf-3.7.3\common\services\usb #
+#                    \class\msc\device\example\sam3x8h_sam3x_ek\iar\Debug\Obj #
+#                    \system_sam3x.o E:\_PY\_work\_GPS\asf-3.7.3\common\servi #
+#                    ces\usb\class\msc\device\example\sam3x8h_sam3x_ek\iar\De #
+#                    bug\Obj\udc.o E:\_PY\_work\_GPS\asf-3.7.3\common\service #
+#                    s\usb\class\msc\device\example\sam3x8h_sam3x_ek\iar\Debu #
+#                    g\Obj\udi_msc.o E:\_PY\_work\_GPS\asf-3.7.3\common\servi #
+#                    ces\usb\class\msc\device\example\sam3x8h_sam3x_ek\iar\De #
+#                    bug\Obj\udi_msc_desc.o E:\_PY\_work\_GPS\asf-3.7.3\commo #
+#                    n\services\usb\class\msc\device\example\sam3x8h_sam3x_ek #
+#                    \iar\Debug\Obj\ui.o E:\_PY\_work\_GPS\asf-3.7.3\common\s #
+#                    ervices\usb\class\msc\device\example\sam3x8h_sam3x_ek\ia #
+#                    r\Debug\Obj\uotghs_device.o                              #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\common\services\usb\class\ms #
+#                    c\device\example\sam3x8h_sam3x_ek\iar\Debug\Obj\virtual_ #
+#                    mem.o -o E:\_PY\_work\_GPS\asf-3.7.3\common\services\usb #
+#                    \class\msc\device\example\sam3x8h_sam3x_ek\iar\Debug\Exe #
+#                    \device_example_flash.out --redirect                     #
+#                    _Printf=_PrintfLarge --redirect _Scanf=_ScanfSmall       #
+#                    --map E:\_PY\_work\_GPS\asf-3.7.3\common\services\usb\cl #
+#                    ass\msc\device\example\sam3x8h_sam3x_ek\iar\Debug\List\d #
+#                    evice_example_flash.map --config                         #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\common\services\usb\class\ms #
+#                    c\device\example\sam3x8h_sam3x_ek\iar/../../../../../../ #
+#                    ../../../sam/utils/linker_scripts/sam3x/sam3x8/iar/flash #
+#                    .icf --remarks --config_def __ICFEDIT_size_cstack__=16K  #
+#                    --entry __iar_program_start --no_exceptions --vfe        #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x00080000 { ro section .intvec };
+"P1":  place in [from 0x00080000 to 0x000fffff] { ro };
+"P2":  place in [from 0x20070000 to 0x20087fff] { rw, block CSTACK, block HEAP };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A1":                                       0xf4
+  .intvec                     0x00080000    0xf4  <Block>
+    .intvec          const    0x00080000    0xf4  startup_sam3x.o [1]
+                            - 0x000800f4    0xf4
+
+"P1":                                     0x59d4
+  .text              ro code  0x000800f4   0xe88  uotghs_device.o [1]
+  .text              ro code  0x00080f7c   0x168  sleep.o [1]
+  .text              ro code  0x000810e4   0x54c  udc.o [1]
+  .text              ro code  0x00081630    0xb4  main.o [1]
+  .text              ro code  0x000816e4   0x2c6  pmc.o [1]
+  .text              ro code  0x000819aa    0x2e  copy_init3.o [5]
+  .text              ro code  0x000819d8    0xb8  sysclk.o [1]
+  .text              ro code  0x00081a90    0x76  ABImemcpy.o [5]
+  .text              ro code  0x00081b06    0x22  zero_init3.o [5]
+  .text              ro code  0x00081b28     0x6  ABImemclr.o [5]
+  .text              ro code  0x00081b2e     0x2  exceptions.o [1]
+  .text              ro code  0x00081b30   0x160  init.o [1]
+  .text              ro code  0x00081c90    0x58  ui.o [1]
+  .text              ro code  0x00081ce8     0x4  memories_initialization_sam.o [1]
+  .text              ro code  0x00081cec   0x5b4  udi_msc.o [1]
+  .text              ro code  0x000822a0   0x124  system_sam3x.o [1]
+  .text              ro code  0x000823c4    0x66  ABImemset.o [5]
+  .text              ro code  0x0008242c   0x160  pio.o [1]
+  .text              ro code  0x0008258c    0x80  led.o [1]
+  Veneer             ro code  0x0008260c     0x8  - Linker created -
+  .text              ro code  0x00082614   0x920  sd_mmc.o [1]
+  .text              ro code  0x00082f34   0x124  ctrl_access.o [1]
+  .text              ro code  0x00083058     0x6  ABImemclr4.o [5]
+  .text              ro code  0x00083060   0x398  hsmci.o [1]
+  .text              ro code  0x000833f8    0x3a  ABImemset48.o [5]
+  .text              ro code  0x00083434    0xc0  dmac.o [1]
+  .text              ro code  0x000834f4   0xbd4  nand_flash_translation.o [4]
+  .text              ro code  0x000840c8   0x572  nand_flash_management.o [4]
+  .text              ro code  0x0008463a   0x14e  nand_flash_model.o [1]
+  .text              ro code  0x00084788    0x14  nand_flash_management.o [4]
+  .text              ro code  0x0008479c     0xe  nand_flash_translation.o [4]
+  .text              ro code  0x000847ac   0x574  nand_flash_raw_nfc.o [1]
+  .text              ro code  0x00084d20    0x70  nand_flash_spare_scheme.o [1]
+  .text              ro code  0x00084d90    0xc2  nand_flash_ecc_sw.o [1]
+  .text              ro code  0x00084e54    0x86  smc.o [1]
+  .text              ro code  0x00084eda   0x226  ecc-sw.o [1]
+  .rodata            const    0x00085100   0x2b8  nand_flash_model.o [1]
+  .rodata            const    0x000853b8   0x18c  nand_flash_spare_scheme.o [1]
+  .text              ro code  0x00085544   0x168  nand_flash_mem.o [1]
+  .text              ro code  0x000856ac   0x160  sd_mmc_mem.o [1]
+  .text              ro code  0x0008580c    0x80  pio_handler.o [1]
+  .text              ro code  0x0008588c    0x30  startup_sam3x.o [1]
+  .text              ro code  0x000858bc     0xc  cstartup_M.o [5]
+  .text              ro code  0x000858c8    0x16  cmain.o [5]
+  .text              ro code  0x000858e0    0x28  data_init3.o [5]
+  .text              ro code  0x00085908     0x4  exit.o [3]
+  .text              ro code  0x0008590c     0xa  cexit.o [5]
+  .text              ro code  0x00085918     0xc  XXexit.o [5]
+  .rodata            const    0x00085924    0x2c  ctrl_access.o [1]
+  .iar.init_table    const    0x00085950    0x24  - Linker created -
+  .rodata            const    0x00085974     0x0  zero_init3.o [5]
+  .rodata            const    0x00085974     0x0  copy_init3.o [5]
+  Initializer bytes  ro data  0x00085974   0x154  <for P2 s0>
+                            - 0x00085ac8  0x59d4
+
+"P2", part 1 of 3:                         0x154
+  P2 s0                       0x20070000   0x154  <Init block>
+    .data            inited   0x20070000    0x30  udc.o [1]
+    .data            inited   0x20070030    0x28  udi_msc.o [1]
+    .data            inited   0x20070058    0x24  sd_mmc.o [1]
+    .data            inited   0x2007007c    0x24  udi_msc.o [1]
+    .data            inited   0x200700a0    0x20  udi_msc_desc.o [1]
+    .data            inited   0x200700c0    0x20  udi_msc_desc.o [1]
+    .data            inited   0x200700e0    0x14  udi_msc.o [1]
+    .data            inited   0x200700f4    0x14  udi_msc_desc.o [1]
+    .data            inited   0x20070108    0x14  udi_msc_desc.o [1]
+    .data            inited   0x2007011c     0xc  udi_msc_desc.o [1]
+    .textrw          inited   0x20070128     0xa  cycle_counter.o [1]
+    .data            inited   0x20070132     0x2  nand_flash_translation.o [4]
+    .data            inited   0x20070134     0x8  udi_msc_desc.o [1]
+    .data            inited   0x2007013c     0x8  udi_msc_desc.o [1]
+    .data            inited   0x20070144     0x4  system_sam3x.o [1]
+    .data            inited   0x20070148     0x4  udi_msc_desc.o [1]
+    .data            inited   0x2007014c     0x2  nand_flash_translation.o [4]
+    .data            inited   0x2007014e     0x2  nand_flash_translation.o [4]
+    .data            inited   0x20070150     0x2  nand_flash_translation.o [4]
+    .data            inited   0x20070152     0x1  interrupt_sam_nvic.o [1]
+                            - 0x20070154   0x154
+
+"P2", part 2 of 3:                        0x4d94
+  .bss               zero     0x20070154  0x3848  nand_flash_mem.o [1]
+  .bss               zero     0x2007399c   0x800  nand_flash_translation.o [4]
+  .bss               zero     0x2007419c   0x800  nand_flash_translation.o [4]
+  .bss               zero     0x2007499c   0x400  sd_mmc_mem.o [1]
+  .bss               zero     0x20074d9c    0x74  pio_handler.o [1]
+  .bss               zero     0x20074e10    0x30  uotghs_device.o [1]
+  .bss               zero     0x20074e40    0x20  udi_msc.o [1]
+  .bss               zero     0x20074e60    0x20  uotghs_device.o [1]
+  .bss               zero     0x20074e80    0x14  udi_msc.o [1]
+  .bss               zero     0x20074e94    0x14  udi_msc.o [1]
+  .bss               zero     0x20074ea8    0x10  udc.o [1]
+  .bss               zero     0x20074eb8     0xc  sd_mmc.o [1]
+  .bss               zero     0x20074ec4     0x8  hsmci.o [1]
+  .bss               zero     0x20074ecc     0x8  sleep.o [1]
+  .bss               zero     0x20074ed4     0x8  sleepmgr.o [1]
+  .bss               zero     0x20074edc     0x4  nand_flash_translation.o [4]
+  .bss               zero     0x20074ee0     0x2  sd_mmc_mem.o [1]
+  .bss               zero     0x20074ee2     0x2  uotghs_device.o [1]
+  .bss               zero     0x20074ee4     0x1  main.o [1]
+                            - 0x20074ee5  0x4d91
+
+"P2", part 3 of 3:                        0x4000
+  CSTACK                      0x20074ee8  0x4000  <Block>
+    CSTACK           uninit   0x20074ee8  0x4000  <Block tail>
+                            - 0x20078ee8  0x4000
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x4d91:
+          0x20070154  0x4d91
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x154 (100% of destination):
+          0x00085974   0x154
+    1 destination range, total size 0x153:
+          0x20070000   0x153
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                         ro code  rw code  ro data  rw data
+    ------                         -------  -------  -------  -------
+E:\_PY\_work\_GPS\asf-3.7.3\common\services\usb\class\msc\device\example\sam3x8h_sam3x_ek\iar\Debug\Obj: [1]
+    ctrl_access.o                      292                44
+    cycle_counter.o                              10       10
+    dmac.o                             192
+    ecc-sw.o                           550
+    exceptions.o                         2
+    hsmci.o                            920                          8
+    init.o                             352
+    interrupt_sam_nvic.o                                   1        1
+    led.o                              128
+    main.o                             180                          1
+    memories_initialization_sam.o        4
+    nand_flash_ecc_sw.o                194
+    nand_flash_mem.o                   360                     14 408
+    nand_flash_model.o                 334               696
+    nand_flash_raw_nfc.o             1 396
+    nand_flash_spare_scheme.o          112               396
+    pio.o                              352
+    pio_handler.o                      128                        116
+    pmc.o                              710
+    sd_mmc.o                         2 336                36       48
+    sd_mmc_mem.o                       352                      1 026
+    sleep.o                            360                          8
+    sleepmgr.o                                                      8
+    smc.o                              134
+    startup_sam3x.o                     48               244
+    sysclk.o                           184
+    system_sam3x.o                     292                 4        4
+    udc.o                            1 356                48       64
+    udi_msc.o                        1 460                96      168
+    udi_msc_desc.o                                       136      136
+    ui.o                                88
+    uotghs_device.o                  3 720                         82
+    -----------------------------------------------------------------
+    Total:                          16 536       10    1 711   16 078
+
+command line: [2]
+    -----------------------------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    exit.o                               4
+    -----------------------------------------------------------------
+    Total:                               4
+
+lib_nand_flash_cortexm3.a: [4]
+    nand_flash_management.o          1 414
+    nand_flash_translation.o         3 042                 8    4 108
+    -----------------------------------------------------------------
+    Total:                           4 456                 8    4 108
+
+rt7M_tl.a: [5]
+    ABImemclr.o                          6
+    ABImemclr4.o                         6
+    ABImemcpy.o                        118
+    ABImemset.o                        102
+    ABImemset48.o                       58
+    XXexit.o                            12
+    cexit.o                             10
+    cmain.o                             22
+    copy_init3.o                        46
+    cstartup_M.o                        12
+    data_init3.o                        40
+    zero_init3.o                        34
+    -----------------------------------------------------------------
+    Total:                             466
+
+    Gaps                                14
+    Linker created                       8                37   16 384
+---------------------------------------------------------------------
+    Grand Total:                    21 484       10    1 756   36 570
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address    Size  Type      Object
+-----                      -------    ----  ----      ------
+.intvec$$Base           0x00080000           --   Gb  - Linker created -
+.intvec$$Limit          0x000800f4           --   Gb  - Linker created -
+?main                   0x000858c9          Code  Gb  cmain.o [5]
+ADC_Handler             0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+BusFault_Handler        0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+CAN0_Handler            0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+CAN1_Handler            0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+CSTACK$$Base            0x20074ee8           --   Gb  - Linker created -
+CSTACK$$Limit           0x20078ee8           --   Gb  - Linker created -
+DACC_Handler            0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+DMAC_Handler            0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+DebugMon_Handler        0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+Dummy_Handler           0x00081b2f     0x2  Code  Gb  exceptions.o [1]
+EFC0_Handler            0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+EFC1_Handler            0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+EMAC_Handler            0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+HSMCI_Handler           0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+HardFault_Handler       0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+LED_DESCRIPTOR          0x000825ec    0x20  Data  Lc  led.o [1]
+LED_Off                 0x0008258d    0x2a  Code  Gb  led.o [1]
+LED_On                  0x000825b7    0x2a  Code  Gb  led.o [1]
+MemManage_Handler       0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+NMI_Handler             0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+PIOA_Handler            0x0008584b     0x6  Code  Gb  pio_handler.o [1]
+PIOB_Handler            0x00085851     0x6  Code  Gb  pio_handler.o [1]
+PIOC_Handler            0x00085857     0x6  Code  Gb  pio_handler.o [1]
+PIOD_Handler            0x0008585d     0x6  Code  Gb  pio_handler.o [1]
+PIOE_Handler            0x00085863     0x6  Code  Gb  pio_handler.o [1]
+PIOF_Handler            0x00085869     0x6  Code  Gb  pio_handler.o [1]
+PMC_Handler             0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+PWM_Handler             0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+PendSV_Handler          0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+RSTC_Handler            0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+RTC_Handler             0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+RTT_Handler             0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+Region$$Table$$Base     0x00085950           --   Gb  - Linker created -
+Region$$Table$$Limit    0x00085974           --   Gb  - Linker created -
+Reset_Handler           0x000858b9     0x4  Code  Gb  startup_sam3x.o [1]
+SDMMC_UNSTUFF_BITS      0x00082615    0x54  Code  Lc  sd_mmc.o [1]
+SDRAMC_Handler          0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+SMC_Handler             0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+SPI0_Handler            0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+SPI1_Handler            0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+SSC_Handler             0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+SUPC_Handler            0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+SVC_Handler             0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+SysTick_Handler         0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+SystemCoreClock         0x20070144     0x4  Data  Gb  system_sam3x.o [1]
+SystemCoreClockUpdate   0x000822a1    0xb4  Code  Gb  system_sam3x.o [1]
+TC0_Handler             0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+TC1_Handler             0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+TC2_Handler             0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+TC3_Handler             0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+TC4_Handler             0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+TC5_Handler             0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+TC6_Handler             0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+TC7_Handler             0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+TC8_Handler             0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+TRNG_Handler            0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+TWI0_Handler            0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+TWI1_Handler            0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+UART_Handler            0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+UOTGHS_Handler          0x00080159   0x170  Code  Gb  uotghs_device.o [1]
+USART0_Handler          0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+USART1_Handler          0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+USART2_Handler          0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+USART3_Handler          0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+UsageFault_Handler      0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+WDT_Handler             0x00081b2f     0x2  Code  Wk  exceptions.o [1]
+__aeabi_memclr          0x00081b29          Code  Gb  ABImemclr.o [5]
+__aeabi_memclr4         0x00083059          Code  Gb  ABImemclr4.o [5]
+__aeabi_memcpy          0x00081a91          Code  Gb  ABImemcpy.o [5]
+__aeabi_memcpy4         0x00081ab1          Code  Gb  ABImemcpy.o [5]
+__aeabi_memcpy8         0x00081ab1          Code  Gb  ABImemcpy.o [5]
+__aeabi_memset          0x000823c5          Code  Gb  ABImemset.o [5]
+__aeabi_memset4         0x000833f9          Code  Gb  ABImemset48.o [5]
+__aeabi_memset8         0x000833f9          Code  Gb  ABImemset48.o [5]
+__cmain                 0x000858c9          Code  Gb  cmain.o [5]
+__exit                  0x00085919          Code  Gb  XXexit.o [5]
+__iar_Memset            0x000823c5          Code  Gb  ABImemset.o [5]
+__iar_Memset4_word      0x00083401          Code  Gb  ABImemset48.o [5]
+__iar_Memset8_word      0x00083401          Code  Gb  ABImemset48.o [5]
+__iar_Memset_word       0x000823cd          Code  Gb  ABImemset.o [5]
+__iar_copy_init3        0x000819ab    0x2e  Code  Gb  copy_init3.o [5]
+__iar_data_init3        0x000858e1    0x28  Code  Gb  data_init3.o [5]
+__iar_program_start     0x000858bd          Code  Gb  cstartup_M.o [5]
+__iar_zero_init3        0x00081b07    0x22  Code  Gb  zero_init3.o [5]
+__low_level_init        0x0008588d    0x20  Code  Gb  startup_sam3x.o [1]
+__region_NFC_RAM_end__ {Abs}
+                        0x20100fff           --   Gb  command line/config [2]
+__region_NFC_RAM_start__ {Abs}
+                        0x20100000           --   Gb  command line/config [2]
+__region_RAM0_end__ {Abs}
+                        0x2000ffff           --   Gb  command line/config [2]
+__region_RAM0_size__ {Abs}
+                        0x00010000           --   Gb  command line/config [2]
+__region_RAM0_start__ {Abs}
+                        0x20000000           --   Gb  command line/config [2]
+__region_RAM1_end__ {Abs}
+                        0x20087fff           --   Gb  command line/config [2]
+__region_RAM1_size__ {Abs}
+                        0x00008000           --   Gb  command line/config [2]
+__region_RAM1_start__ {Abs}
+                        0x20080000           --   Gb  command line/config [2]
+__region_RAM_end__ {Abs}
+                        0x20087fff           --   Gb  command line/config [2]
+__region_RAM_size__ {Abs}
+                        0x00018000           --   Gb  command line/config [2]
+__region_RAM_start__ {Abs}
+                        0x20070000           --   Gb  command line/config [2]
+__region_ROM_end__ {Abs}
+                        0x000fffff           --   Gb  command line/config [2]
+__region_ROM_size__ {Abs}
+                        0x00080000           --   Gb  command line/config [2]
+__region_ROM_start__ {Abs}
+                        0x00080000           --   Gb  command line/config [2]
+__vector_table          0x00080000    0xf4  Data  Gb  startup_sam3x.o [1]
+_call_main              0x000858d5          Code  Gb  cmain.o [5]
+_exit                   0x0008590d          Code  Gb  cexit.o [5]
+_main                   0x000858db          Code  Gb  cmain.o [5]
+absv                    0x000839b5     0xa  Code  Lc  nand_flash_translation.o [4]
+allocate_block          0x000839bf    0xbe  Code  Lc  nand_flash_translation.o [4]
+b_is_fastrc_used        0x20074ecc     0x1  Data  Lc  sleep.o [1]
+board_init              0x00081b31   0x160  Code  Gb  init.o [1]
+callback_clocks_restored
+                        0x20074ed0     0x4  Data  Lc  sleep.o [1]
+check_block             0x00084127    0x60  Code  Lc  nand_flash_management.o [4]
+check_block_allocatable
+                        0x00083919    0x26  Code  Lc  nand_flash_translation.o [4]
+check_device_virgin     0x000840c9    0x5e  Code  Lc  nand_flash_management.o [4]
+check_page_status       0x0008393f    0x2a  Code  Lc  nand_flash_translation.o [4]
+check_status            0x00084843    0x24  Code  Lc  nand_flash_raw_nfc.o [1]
+compute256              0x00084f0d    0xd8  Code  Lc  ecc-sw.o [1]
+copy_page               0x0008496b    0xb0  Code  Lc  nand_flash_raw_nfc.o [1]
+count_bits_in_byte      0x00084edb    0x14  Code  Lc  ecc-sw.o [1]
+count_bits_in_code256   0x00084eef    0x1e  Code  Lc  ecc-sw.o [1]
+cpu_irq_restore         0x00080107    0x12  Code  Lc  uotghs_device.o [1]
+cpu_irq_save            0x000800f5    0x12  Code  Lc  uotghs_device.o [1]
+current_read_block      0x2007014e     0x2  Data  Lc  nand_flash_translation.o [4]
+current_read_page       0x20070150     0x2  Data  Lc  nand_flash_translation.o [4]
+current_write_block     0x20070132     0x2  Data  Lc  nand_flash_translation.o [4]
+current_write_page      0x2007014c     0x2  Data  Lc  nand_flash_translation.o [4]
+dmac_channel_disable    0x00083457     0x4  Code  Gb  dmac.o [1]
+dmac_channel_enable     0x00083453     0x4  Code  Gb  dmac.o [1]
+dmac_channel_is_transfer_done
+                        0x000834e3    0x12  Code  Gb  dmac.o [1]
+dmac_channel_set_configuration
+                        0x0008349d     0xa  Code  Gb  dmac.o [1]
+dmac_channel_set_ctrlA  0x00083489     0xa  Code  Gb  dmac.o [1]
+dmac_channel_set_ctrlB  0x00083493     0xa  Code  Gb  dmac.o [1]
+dmac_channel_set_descriptor_addr
+                        0x0008347f     0xa  Code  Gb  dmac.o [1]
+dmac_channel_set_destination_addr
+                        0x00083475     0xa  Code  Gb  dmac.o [1]
+dmac_channel_set_source_addr
+                        0x0008346b     0xa  Code  Gb  dmac.o [1]
+dmac_channel_single_buf_transfer_init
+                        0x000834a7    0x3c  Code  Gb  dmac.o [1]
+dmac_disable            0x00083449     0xa  Code  Gb  dmac.o [1]
+dmac_enable             0x00083443     0x6  Code  Gb  dmac.o [1]
+dmac_init               0x00083435     0x2  Code  Gb  dmac.o [1]
+dmac_set_priority_mode  0x00083437     0xc  Code  Gb  dmac.o [1]
+exit                    0x00085909     0x4  Code  Gb  exit.o [3]
+find_logical_mapping_block
+                        0x000834f5    0xb2  Code  Lc  nand_flash_translation.o [4]
+flush_current_page      0x00083d5d    0x48  Code  Lc  nand_flash_translation.o [4]
+g_interrupt_enabled     0x20070152     0x1  Data  Gb  interrupt_sam_nvic.o [1]
+get_nb_lun              0x00082f35     0x4  Code  Gb  ctrl_access.o [1]
+gs_interrupt_sources    0x20074d9c    0x70  Data  Lc  pio_handler.o [1]
+gs_ul_nb_sources        0x20074e0c     0x4  Data  Lc  pio_handler.o [1]
+hamming_compute_256x    0x000850ad    0x22  Code  Gb  ecc-sw.o [1]
+hamming_verify_256x     0x000850cf    0x32  Code  Gb  ecc-sw.o [1]
+hsmci_adtc_start        0x000831df    0x82  Code  Gb  hsmci.o [1]
+hsmci_block_size        0x20074ec4     0x2  Data  Lc  hsmci.o [1]
+hsmci_deselect_device   0x00083181     0x2  Code  Gb  hsmci.o [1]
+hsmci_get_bus_width     0x00083121     0xa  Code  Gb  hsmci.o [1]
+hsmci_get_response      0x000831b7     0x6  Code  Gb  hsmci.o [1]
+hsmci_get_response_128  0x000831bd    0x22  Code  Gb  hsmci.o [1]
+hsmci_init              0x000830f9    0x28  Code  Gb  hsmci.o [1]
+hsmci_is_high_speed_capable
+                        0x0008312b     0x4  Code  Gb  hsmci.o [1]
+hsmci_nb_block          0x20074ec6     0x2  Data  Lc  hsmci.o [1]
+hsmci_read_word         0x00083261    0x36  Code  Gb  hsmci.o [1]
+hsmci_reset             0x00083061    0x28  Code  Lc  hsmci.o [1]
+hsmci_select_device     0x0008312f    0x52  Code  Gb  hsmci.o [1]
+hsmci_send_clock        0x00083183    0x1c  Code  Gb  hsmci.o [1]
+hsmci_send_cmd          0x0008319f    0x18  Code  Gb  hsmci.o [1]
+hsmci_send_cmd_execute  0x00083089    0x70  Code  Lc  hsmci.o [1]
+hsmci_start_read_blocks
+                        0x0008329f    0x36  Code  Gb  hsmci.o [1]
+hsmci_start_write_blocks
+                        0x00083301    0x2c  Code  Gb  hsmci.o [1]
+hsmci_transfert_pos     0x20074ec8     0x4  Data  Lc  hsmci.o [1]
+hsmci_wait_end_of_read_blocks
+                        0x000832d5    0x2c  Code  Gb  hsmci.o [1]
+hsmci_wait_end_of_write_blocks
+                        0x00083379    0x2c  Code  Gb  hsmci.o [1]
+lun_desc                0x00083018    0x40  Data  Lc  ctrl_access.o [1]
+main                    0x00081631    0x6c  Code  Gb  main.o [1]
+main_b_msc_enable       0x20074ee4     0x1  Data  Lc  main.o [1]
+main_msc_disable        0x000816d1     0x8  Code  Gb  main.o [1]
+main_msc_enable         0x000816c7     0xa  Code  Gb  main.o [1]
+main_resume_action      0x000816ad     0x4  Code  Gb  main.o [1]
+main_sof_action         0x000816b1    0x16  Code  Gb  main.o [1]
+main_suspend_action     0x000816a9     0x4  Code  Gb  main.o [1]
+mark_all_page_clean     0x000839a3    0x12  Code  Lc  nand_flash_translation.o [4]
+mark_page_dirty         0x00083969    0x3a  Code  Lc  nand_flash_translation.o [4]
+mem_name                0x00082fab    0x14  Code  Gb  ctrl_access.o [1]
+mem_read_capacity       0x00082f4b    0x18  Code  Gb  ctrl_access.o [1]
+mem_removal             0x00082f97    0x14  Code  Gb  ctrl_access.o [1]
+mem_test_unit_ready     0x00082f39    0x12  Code  Gb  ctrl_access.o [1]
+mem_unload              0x00082f63    0x20  Code  Gb  ctrl_access.o [1]
+mem_wr_protect          0x00082f83    0x14  Code  Gb  ctrl_access.o [1]
+memcpy                  0x0008479d     0xe  Code  Gb  nand_flash_translation.o [4]
+memories_initialization
+                        0x00081ce9     0x4  Code  Gb  memories_initialization_sam.o [1]
+memory_2_usb            0x00082fbf    0x26  Code  Gb  ctrl_access.o [1]
+memset                  0x00084789    0x14  Code  Gb  nand_flash_management.o [4]
+mmc_decode_csd          0x000826ff    0x86  Code  Lc  sd_mmc.o [1]
+mmc_trans_multipliers   0x00082ef4    0x40  Data  Gb  sd_mmc.o [1]
+nand_flash_ecc_initialize
+                        0x00084d91     0xe  Code  Gb  nand_flash_ecc_sw.o [1]
+nand_flash_ecc_read_page
+                        0x00084d9f    0x54  Code  Gb  nand_flash_ecc_sw.o [1]
+nand_flash_ecc_write_page
+                        0x00084df3    0x56  Code  Gb  nand_flash_ecc_sw.o [1]
+nand_flash_flush        0x00084091    0x18  Code  Gb  nand_flash_translation.o [4]
+nand_flash_management_allocate_block
+                        0x00084355    0x4a  Code  Gb  nand_flash_management.o [4]
+nand_flash_management_copy_block
+                        0x00084525    0x4e  Code  Gb  nand_flash_management.o [4]
+nand_flash_management_copy_page
+                        0x000844c9    0x5c  Code  Gb  nand_flash_management.o [4]
+nand_flash_management_count_blocks
+                        0x00084605    0x2e  Code  Gb  nand_flash_management.o [4]
+nand_flash_management_erase_block
+                        0x000843e9    0x78  Code  Gb  nand_flash_management.o [4]
+nand_flash_management_erase_dirty_blocks
+                        0x00084573    0x36  Code  Gb  nand_flash_management.o [4]
+nand_flash_management_find_youngest_block
+                        0x000845a9    0x5c  Code  Gb  nand_flash_management.o [4]
+nand_flash_management_get_managed_blocks
+                        0x00084633     0x8  Code  Gb  nand_flash_management.o [4]
+nand_flash_management_initialize
+                        0x000841c1   0x194  Code  Gb  nand_flash_management.o [4]
+nand_flash_management_read_page
+                        0x00084461    0x3c  Code  Gb  nand_flash_management.o [4]
+nand_flash_management_release_block
+                        0x0008439f    0x4a  Code  Gb  nand_flash_management.o [4]
+nand_flash_management_write_page
+                        0x0008449d    0x2c  Code  Gb  nand_flash_management.o [4]
+nand_flash_map_initialize
+                        0x0008388d    0x8c  Code  Lc  nand_flash_translation.o [4]
+nand_flash_map_load_logical_mapping
+                        0x00083785   0x108  Code  Lc  nand_flash_translation.o [4]
+nand_flash_map_logical_to_physical
+                        0x0008364b     0xe  Code  Lc  nand_flash_translation.o [4]
+nand_flash_map_maping   0x000835fb    0x50  Code  Lc  nand_flash_translation.o [4]
+nand_flash_map_physical_to_logical
+                        0x00083659    0x38  Code  Lc  nand_flash_translation.o [4]
+nand_flash_map_read_page
+                        0x000835a7    0x2a  Code  Lc  nand_flash_translation.o [4]
+nand_flash_map_save_logical_mapping
+                        0x00083691    0xf4  Code  Lc  nand_flash_translation.o [4]
+nand_flash_map_write_page
+                        0x000835d1    0x2a  Code  Lc  nand_flash_translation.o [4]
+nand_flash_model_copy_back
+                        0x0008477f     0xa  Code  Gb  nand_flash_model.o [1]
+nand_flash_model_find   0x0008463b    0x90  Code  Gb  nand_flash_model.o [1]
+nand_flash_model_get_block_size_in_bytes
+                        0x00084753     0x6  Code  Gb  nand_flash_model.o [1]
+nand_flash_model_get_block_size_in_pages
+                        0x00084747     0xc  Code  Gb  nand_flash_model.o [1]
+nand_flash_model_get_data_bus_width
+                        0x00084763     0xe  Code  Gb  nand_flash_model.o [1]
+nand_flash_model_get_device_size_in_blocks
+                        0x0008471d     0xe  Code  Gb  nand_flash_model.o [1]
+nand_flash_model_get_device_size_in_bytes
+                        0x0008473f     0x8  Code  Gb  nand_flash_model.o [1]
+nand_flash_model_get_device_size_in_pages
+                        0x0008472b    0x14  Code  Gb  nand_flash_model.o [1]
+nand_flash_model_get_page_data_size
+                        0x00084759     0x4  Code  Gb  nand_flash_model.o [1]
+nand_flash_model_get_page_spare_size
+                        0x0008475d     0x6  Code  Gb  nand_flash_model.o [1]
+nand_flash_model_get_scheme
+                        0x00084719     0x4  Code  Gb  nand_flash_model.o [1]
+nand_flash_model_list   0x00085100   0x2b8  Data  Gb  nand_flash_model.o [1]
+nand_flash_model_small_block
+                        0x00084771     0xe  Code  Gb  nand_flash_model.o [1]
+nand_flash_model_translate_access
+                        0x000846cb    0x4e  Code  Gb  nand_flash_model.o [1]
+nand_flash_raw_copy_page
+                        0x00084cf5    0x2c  Code  Gb  nand_flash_raw_nfc.o [1]
+nand_flash_raw_erase_block
+                        0x00084b4d    0x58  Code  Gb  nand_flash_raw_nfc.o [1]
+nand_flash_raw_initialize
+                        0x00084a1b    0xe8  Code  Gb  nand_flash_raw_nfc.o [1]
+nand_flash_raw_read_id  0x00084b1f    0x2e  Code  Gb  nand_flash_raw_nfc.o [1]
+nand_flash_raw_read_page
+                        0x00084be1    0xd2  Code  Gb  nand_flash_raw_nfc.o [1]
+nand_flash_raw_reset    0x00084b03    0x1c  Code  Gb  nand_flash_raw_nfc.o [1]
+nand_flash_raw_write_page
+                        0x00084ccb    0x2a  Code  Gb  nand_flash_raw_nfc.o [1]
+nand_flash_read         0x00083fd1    0xc0  Code  Gb  nand_flash_translation.o [4]
+nand_flash_read_capacity
+                        0x0008557d    0x3e  Code  Gb  nand_flash_mem.o [1]
+nand_flash_removal      0x000855d1     0x4  Code  Gb  nand_flash_mem.o [1]
+nand_flash_spare_scheme_2048
+                        0x000854c0    0x84  Data  Gb  nand_flash_spare_scheme.o [1]
+nand_flash_spare_scheme_256
+                        0x000853b8    0x84  Data  Gb  nand_flash_spare_scheme.o [1]
+nand_flash_spare_scheme_512
+                        0x0008543c    0x84  Data  Gb  nand_flash_spare_scheme.o [1]
+nand_flash_spare_scheme_read_bad_block_marker
+                        0x00084d21     0x8  Code  Gb  nand_flash_spare_scheme.o [1]
+nand_flash_spare_scheme_read_ecc
+                        0x00084d29    0x18  Code  Gb  nand_flash_spare_scheme.o [1]
+nand_flash_spare_scheme_read_extra
+                        0x00084d59    0x1c  Code  Gb  nand_flash_spare_scheme.o [1]
+nand_flash_spare_scheme_write_ecc
+                        0x00084d41    0x18  Code  Gb  nand_flash_spare_scheme.o [1]
+nand_flash_spare_scheme_write_extra
+                        0x00084d75    0x1c  Code  Gb  nand_flash_spare_scheme.o [1]
+nand_flash_status       0x20070154     0x4  Data  Lc  nand_flash_mem.o [1]
+nand_flash_test_unit_ready
+                        0x00085545    0x38  Code  Gb  nand_flash_mem.o [1]
+nand_flash_translation_flush
+                        0x00083c3d    0x8e  Code  Gb  nand_flash_translation.o [4]
+nand_flash_translation_get_device_size_in_block
+                        0x00083d0d    0x1e  Code  Gb  nand_flash_translation.o [4]
+nand_flash_translation_get_device_size_in_byte
+                        0x00083d45    0x18  Code  Gb  nand_flash_translation.o [4]
+nand_flash_translation_get_device_size_in_page
+                        0x00083d2b    0x1a  Code  Gb  nand_flash_translation.o [4]
+nand_flash_translation_initialize
+                        0x00083a7d    0x54  Code  Gb  nand_flash_translation.o [4]
+nand_flash_translation_read_page
+                        0x00083ad1    0xae  Code  Gb  nand_flash_translation.o [4]
+nand_flash_translation_save_logical_mapping
+                        0x00083ccb    0x42  Code  Gb  nand_flash_translation.o [4]
+nand_flash_translation_write_page
+                        0x00083b7f    0xbe  Code  Gb  nand_flash_translation.o [4]
+nand_flash_usb_buffer   0x2007319c   0x800  Data  Lc  nand_flash_mem.o [1]
+nand_flash_usb_read_10  0x000855d5    0x5a  Code  Gb  nand_flash_mem.o [1]
+nand_flash_usb_write_10
+                        0x0008562f    0x5a  Code  Gb  nand_flash_mem.o [1]
+nand_flash_wr_protect   0x000855cd     0x4  Code  Gb  nand_flash_mem.o [1]
+nand_flash_write        0x00083e75    0xc0  Code  Gb  nand_flash_translation.o [4]
+nf_translation          0x20070158  0x3044  Data  Lc  nand_flash_mem.o [1]
+nf_translation_p        0x20074edc     0x4  Data  Lc  nand_flash_translation.o [4]
+nfc_copy_data_from_internal_sram
+                        0x00084873     0xa  Code  Lc  nand_flash_raw_nfc.o [1]
+nfc_copy_data_to_internal_sram
+                        0x00084867     0xc  Code  Lc  nand_flash_raw_nfc.o [1]
+nfc_translate_address   0x000847ad    0x96  Code  Lc  nand_flash_raw_nfc.o [1]
+osc_enable              0x000819d9    0x3a  Code  Lc  sysclk.o [1]
+osc_wait_ready          0x00081a13    0x28  Code  Lc  sysclk.o [1]
+page_read_buffer        0x2007419c   0x800  Data  Lc  nand_flash_translation.o [4]
+page_write_buffer       0x2007399c   0x800  Data  Lc  nand_flash_translation.o [4]
+pio_configure_pin       0x000824f7    0x82  Code  Gb  pio.o [1]
+pio_get_interrupt_mask  0x000824c7     0x4  Code  Gb  pio.o [1]
+pio_get_interrupt_status
+                        0x000824c3     0x4  Code  Gb  pio.o [1]
+pio_handler_process     0x0008580d    0x3e  Code  Gb  pio_handler.o [1]
+pio_pull_up             0x0008242d     0xa  Code  Gb  pio.o [1]
+pio_set_input           0x0008246d    0x2e  Code  Gb  pio.o [1]
+pio_set_output          0x0008249b    0x28  Code  Gb  pio.o [1]
+pio_set_peripheral      0x00082437    0x36  Code  Gb  pio.o [1]
+pio_set_pin_high        0x000824cb    0x16  Code  Gb  pio.o [1]
+pio_set_pin_low         0x000824e1    0x16  Code  Gb  pio.o [1]
+pmc_disable_pllack      0x000818a3     0xc  Code  Gb  pmc.o [1]
+pmc_disable_upll_clock  0x000818c9     0xc  Code  Gb  pmc.o [1]
+pmc_enable_periph_clk   0x000818d5    0x32  Code  Gb  pmc.o [1]
+pmc_enable_udpck        0x00081917     0x4  Code  Gb  pmc.o [1]
+pmc_enable_upll_clock   0x000818b9    0x10  Code  Gb  pmc.o [1]
+pmc_enable_waitmode     0x0008192f    0x28  Code  Gb  pmc.o [1]
+pmc_is_locked_pllack    0x000818af     0xa  Code  Gb  pmc.o [1]
+pmc_is_wakeup_clocks_restored
+                        0x000810c7     0xa  Code  Gb  sleep.o [1]
+pmc_osc_disable_fastrc  0x00081835     0xc  Code  Gb  pmc.o [1]
+pmc_osc_disable_xtal    0x0008187d    0x1a  Code  Gb  pmc.o [1]
+pmc_osc_is_ready_32kxtal
+                        0x000817cb    0x18  Code  Gb  pmc.o [1]
+pmc_osc_is_ready_mainck
+                        0x00081897     0xc  Code  Gb  pmc.o [1]
+pmc_set_fast_startup_input
+                        0x00081921     0xe  Code  Gb  pmc.o [1]
+pmc_sleep               0x00080f7d   0x13e  Code  Gb  sleep.o [1]
+pmc_switch_mainck_to_fastrc
+                        0x000817e3    0x52  Code  Gb  pmc.o [1]
+pmc_switch_mainck_to_xtal
+                        0x00081841    0x3c  Code  Gb  pmc.o [1]
+pmc_switch_mck_to_mainck
+                        0x00081725    0x44  Code  Gb  pmc.o [1]
+pmc_switch_mck_to_pllack
+                        0x00081769    0x42  Code  Gb  pmc.o [1]
+pmc_switch_mck_to_sclk  0x000816e5    0x40  Code  Gb  pmc.o [1]
+pmc_switch_sclk_to_32kxtal
+                        0x000817ab    0x20  Code  Gb  pmc.o [1]
+pmc_switch_udpck_to_upllck
+                        0x00081907     0xa  Code  Gb  pmc.o [1]
+portable_delay_cycles   0x20070129     0xa  Code  Gb  cycle_counter.o [1]
+sd_cm6_set_high_speed   0x00082669    0x6c  Code  Lc  sd_mmc.o [1]
+sd_mmc_card             0x20074ec0     0x4  Data  Lc  sd_mmc.o [1]
+sd_mmc_cards            0x20070058    0x24  Data  Lc  sd_mmc.o [1]
+sd_mmc_check            0x00082c81    0x38  Code  Gb  sd_mmc.o [1]
+sd_mmc_cmd9_mci         0x000826dd    0x22  Code  Lc  sd_mmc.o [1]
+sd_mmc_configure_slot   0x0008283d    0x18  Code  Lc  sd_mmc.o [1]
+sd_mmc_deselect_slot    0x00082855    0x10  Code  Lc  sd_mmc.o [1]
+sd_mmc_ejected          0x20074ee0     0x2  Data  Lc  sd_mmc_mem.o [1]
+sd_mmc_get_capacity     0x00082cd1    0x18  Code  Gb  sd_mmc.o [1]
+sd_mmc_get_type         0x00082cb9    0x18  Code  Gb  sd_mmc.o [1]
+sd_mmc_init             0x00082c65    0x1c  Code  Gb  sd_mmc.o [1]
+sd_mmc_init_read_blocks
+                        0x00082ced    0x70  Code  Gb  sd_mmc.o [1]
+sd_mmc_init_write_blocks
+                        0x00082da1    0x4e  Code  Gb  sd_mmc.o [1]
+sd_mmc_is_write_protected
+                        0x00082ce9     0x4  Code  Gb  sd_mmc.o [1]
+sd_mmc_mci_card_init    0x00082865   0x21c  Code  Lc  sd_mmc.o [1]
+sd_mmc_mci_install_mmc  0x00082ab3   0x184  Code  Lc  sd_mmc.o [1]
+sd_mmc_nb_block_remaining
+                        0x20074ebc     0x2  Data  Lc  sd_mmc.o [1]
+sd_mmc_nb_block_to_tranfer
+                        0x20074eba     0x2  Data  Lc  sd_mmc.o [1]
+sd_mmc_read_capacity    0x000856e9    0x18  Code  Gb  sd_mmc_mem.o [1]
+sd_mmc_read_capacity_0  0x00085701     0x6  Code  Gb  sd_mmc_mem.o [1]
+sd_mmc_removal_0        0x0008570d     0x4  Code  Gb  sd_mmc_mem.o [1]
+sd_mmc_sam_systick_used
+                        0x20074eb9     0x1  Data  Lc  sd_mmc.o [1]
+sd_mmc_select_slot      0x00082791    0xac  Code  Lc  sd_mmc.o [1]
+sd_mmc_slot_sel         0x20074eb8     0x1  Data  Lc  sd_mmc.o [1]
+sd_mmc_start_read_blocks
+                        0x00082d5d    0x10  Code  Gb  sd_mmc.o [1]
+sd_mmc_start_write_blocks
+                        0x00082def    0x10  Code  Gb  sd_mmc.o [1]
+sd_mmc_test_unit_ready  0x000856ad    0x38  Code  Gb  sd_mmc_mem.o [1]
+sd_mmc_test_unit_ready_0
+                        0x000856e5     0x4  Code  Gb  sd_mmc_mem.o [1]
+sd_mmc_trans_units      0x00082e98    0x1c  Data  Gb  sd_mmc.o [1]
+sd_mmc_usb_read_10      0x00085711    0x66  Code  Gb  sd_mmc_mem.o [1]
+sd_mmc_usb_read_10_0    0x00085783     0x8  Code  Gb  sd_mmc_mem.o [1]
+sd_mmc_usb_write_10     0x0008578b    0x66  Code  Gb  sd_mmc_mem.o [1]
+sd_mmc_usb_write_10_0   0x00085805     0x8  Code  Gb  sd_mmc_mem.o [1]
+sd_mmc_wait_end_of_read_blocks
+                        0x00082d6d    0x34  Code  Gb  sd_mmc.o [1]
+sd_mmc_wait_end_of_write_blocks
+                        0x00082e0f    0x2e  Code  Gb  sd_mmc.o [1]
+sd_mmc_wr_protect_0     0x00085707     0x6  Code  Gb  sd_mmc_mem.o [1]
+sd_trans_multipliers    0x00082eb4    0x40  Data  Gb  sd_mmc.o [1]
+sector_buf_0            0x2007499c   0x200  Data  Gb  sd_mmc_mem.o [1]
+sector_buf_1            0x20074b9c   0x200  Data  Gb  sd_mmc_mem.o [1]
+sleepmgr_locks          0x20074ed4     0x8  Data  Gb  sleepmgr.o [1]
+smc_nfc_disable_spare_read
+                        0x00084e97     0xa  Code  Gb  smc.o [1]
+smc_nfc_disable_spare_write
+                        0x00084eab     0xa  Code  Gb  smc.o [1]
+smc_nfc_enable          0x00084eb5     0x6  Code  Gb  smc.o [1]
+smc_nfc_enable_spare_read
+                        0x00084e8d     0xa  Code  Gb  smc.o [1]
+smc_nfc_enable_spare_write
+                        0x00084ea1     0xa  Code  Gb  smc.o [1]
+smc_nfc_get_status      0x00084ebb     0x4  Code  Gb  smc.o [1]
+smc_nfc_init            0x00084e89     0x4  Code  Gb  smc.o [1]
+smc_nfc_send_command    0x00084ebf    0x1c  Code  Gb  smc.o [1]
+smc_set_cycle_timing    0x00084e69     0xa  Code  Gb  smc.o [1]
+smc_set_mode            0x00084e73     0xc  Code  Gb  smc.o [1]
+smc_set_nand_timing     0x00084e7f     0xa  Code  Gb  smc.o [1]
+smc_set_pulse_timing    0x00084e5f     0xa  Code  Gb  smc.o [1]
+smc_set_setup_timing    0x00084e55     0xa  Code  Gb  smc.o [1]
+sysclk_enable_usb       0x00081a43    0x14  Code  Gb  sysclk.o [1]
+sysclk_init             0x00081a57    0x2e  Code  Gb  sysclk.o [1]
+system_init_flash       0x00082355    0x3a  Code  Gb  system_sam3x.o [1]
+udc_config              0x20070108    0x14  Data  Gb  udi_msc_desc.o [1]
+udc_config_hs           0x2007013c     0x8  Data  Gb  udi_msc_desc.o [1]
+udc_config_lsfs         0x20070134     0x8  Data  Gb  udi_msc_desc.o [1]
+udc_desc_fs             0x200700a0    0x20  Data  Gb  udi_msc_desc.o [1]
+udc_desc_hs             0x200700c0    0x20  Data  Gb  udi_msc_desc.o [1]
+udc_device_desc         0x200700f4    0x14  Data  Gb  udi_msc_desc.o [1]
+udc_device_qual         0x2007011c     0xc  Data  Gb  udi_msc_desc.o [1]
+udc_device_status       0x20074eaa     0x2  Data  Lc  udc.o [1]
+udc_iface_disable       0x00081149    0x42  Code  Lc  udc.o [1]
+udc_iface_enable        0x0008118b    0x3e  Code  Lc  udc.o [1]
+udc_next_desc_in_iface  0x000810e5    0x24  Code  Lc  udc.o [1]
+udc_num_configuration   0x20074ea8     0x1  Data  Lc  udc.o [1]
+udc_process_setup       0x00081545    0xaa  Code  Gb  udc.o [1]
+udc_ptr_conf            0x20074eb0     0x4  Data  Lc  udc.o [1]
+udc_ptr_iface           0x20074eb4     0x4  Data  Lc  udc.o [1]
+udc_req_std_dev_get_descriptor
+                        0x00081233    0xe4  Code  Lc  udc.o [1]
+udc_reqstd              0x00081321   0x224  Code  Lc  udc.o [1]
+udc_reset               0x000811cd    0x2c  Code  Gb  udc.o [1]
+udc_sof_notify          0x000811f9    0x2c  Code  Gb  udc.o [1]
+udc_start               0x000811c9     0x4  Code  Gb  udc.o [1]
+udc_string_desc         0x20070000    0x1c  Data  Lc  udc.o [1]
+udc_string_desc_languageid
+                        0x2007001c     0x4  Data  Lc  udc.o [1]
+udc_string_manufacturer_name
+                        0x20070020     0xc  Data  Lc  udc.o [1]
+udc_string_product_name
+                        0x2007002c     0x4  Data  Lc  udc.o [1]
+udc_update_iface_desc   0x00081109    0x40  Code  Lc  udc.o [1]
+udc_valid_address       0x00081225     0xe  Code  Lc  udc.o [1]
+udd_attach              0x000803a3    0x52  Code  Gb  uotghs_device.o [1]
+udd_b_idle              0x20074ee2     0x1  Data  Lc  uotghs_device.o [1]
+udd_b_sleep_initialized
+                        0x20074ee3     0x1  Data  Lc  uotghs_device.o [1]
+udd_ctrl_endofrequest   0x00080b7d     0xe  Code  Lc  uotghs_device.o [1]
+udd_ctrl_in_sent        0x000809bd    0xbe  Code  Lc  uotghs_device.o [1]
+udd_ctrl_init           0x00080993    0x2a  Code  Lc  uotghs_device.o [1]
+udd_ctrl_interrupt      0x00080b91    0xfa  Code  Lc  uotghs_device.o [1]
+udd_ctrl_out_received   0x00080a7b    0xd6  Code  Lc  uotghs_device.o [1]
+udd_ctrl_payload_buf_cnt
+                        0x20074e7e     0x2  Data  Lc  uotghs_device.o [1]
+udd_ctrl_prev_payload_buf_cnt
+                        0x20074e7c     0x2  Data  Lc  uotghs_device.o [1]
+udd_ctrl_send_zlp_in    0x00080b51    0x2c  Code  Lc  uotghs_device.o [1]
+udd_detach              0x0008040d    0x24  Code  Gb  uotghs_device.o [1]
+udd_enable              0x000802c9    0xc4  Code  Gb  uotghs_device.o [1]
+udd_ep_abort            0x0008082b    0x5c  Code  Gb  uotghs_device.o [1]
+udd_ep_abort_job        0x00080c95    0x18  Code  Lc  uotghs_device.o [1]
+udd_ep_alloc            0x00080487   0x184  Code  Gb  uotghs_device.o [1]
+udd_ep_clear_halt       0x000806f7    0x9c  Code  Gb  uotghs_device.o [1]
+udd_ep_control_state    0x20074e60     0x1  Data  Lc  uotghs_device.o [1]
+udd_ep_finish_job       0x00080cad    0x2c  Code  Lc  uotghs_device.o [1]
+udd_ep_free             0x0008060b    0x44  Code  Gb  uotghs_device.o [1]
+udd_ep_interrupt        0x00080e05    0xfc  Code  Lc  uotghs_device.o [1]
+udd_ep_is_halted        0x0008064f    0x14  Code  Gb  uotghs_device.o [1]
+udd_ep_job              0x20074e10    0x30  Data  Lc  uotghs_device.o [1]
+udd_ep_run              0x00080793    0x98  Code  Gb  uotghs_device.o [1]
+udd_ep_set_halt         0x00080663    0x94  Code  Gb  uotghs_device.o [1]
+udd_ep_trans_done       0x00080ce1   0x112  Code  Lc  uotghs_device.o [1]
+udd_ep_wait_stall_clear
+                        0x00080887    0x4e  Code  Gb  uotghs_device.o [1]
+udd_g_ctrlreq           0x20074e64    0x18  Data  Gb  uotghs_device.o [1]
+udd_get_frame_number    0x00080471     0xc  Code  Gb  uotghs_device.o [1]
+udd_getaddress          0x00080465     0xc  Code  Gb  uotghs_device.o [1]
+udd_is_high_speed       0x00080431    0x10  Code  Gb  uotghs_device.o [1]
+udd_set_address         0x00080441    0x24  Code  Gb  uotghs_device.o [1]
+udd_set_setup_payload   0x0008047d     0xa  Code  Gb  uotghs_device.o [1]
+udd_sleep_mode          0x00080119    0x40  Code  Lc  uotghs_device.o [1]
+udd_test_mode_j         0x000808d5    0x1a  Code  Gb  uotghs_device.o [1]
+udd_test_mode_k         0x000808ef    0x1a  Code  Gb  uotghs_device.o [1]
+udd_test_mode_packet    0x0008091b    0x78  Code  Gb  uotghs_device.o [1]
+udd_test_mode_se0_nak   0x00080909    0x12  Code  Gb  uotghs_device.o [1]
+udi_api_msc             0x200700e0    0x14  Data  Gb  udi_msc.o [1]
+udi_apis                0x20070148     0x4  Data  Gb  udi_msc_desc.o [1]
+udi_msc_addr            0x20070040     0x4  Data  Lc  udi_msc.o [1]
+udi_msc_b_abort_trans   0x2007004a     0x1  Data  Gb  udi_msc.o [1]
+udi_msc_b_ack_trans     0x20070049     0x1  Data  Gb  udi_msc.o [1]
+udi_msc_b_cbw_invalid   0x20070046     0x1  Data  Lc  udi_msc.o [1]
+udi_msc_b_read          0x20070048     0x1  Data  Lc  udi_msc.o [1]
+udi_msc_b_trans_req     0x20070047     0x1  Data  Lc  udi_msc.o [1]
+udi_msc_cbw             0x20074e40    0x20  Data  Lc  udi_msc.o [1]
+udi_msc_cbw_invalid     0x00081da1    0x18  Code  Lc  udi_msc.o [1]
+udi_msc_cbw_received    0x00081dfd   0x142  Code  Lc  udi_msc.o [1]
+udi_msc_cbw_validate    0x00081f3f    0x26  Code  Lc  udi_msc.o [1]
+udi_msc_cbw_wait        0x00081dd3    0x20  Code  Lc  udi_msc.o [1]
+udi_msc_clear_sense     0x00081fe3    0x16  Code  Lc  udi_msc.o [1]
+udi_msc_csw             0x20070030    0x10  Data  Lc  udi_msc.o [1]
+udi_msc_csw_invalid     0x00081db9    0x1a  Code  Lc  udi_msc.o [1]
+udi_msc_csw_process     0x00081fa3    0x20  Code  Lc  udi_msc.o [1]
+udi_msc_csw_send        0x00081fc3    0x1e  Code  Gb  udi_msc.o [1]
+udi_msc_csw_sent        0x00081fe1     0x2  Code  Lc  udi_msc.o [1]
+udi_msc_data_send       0x00081f65    0x22  Code  Lc  udi_msc.o [1]
+udi_msc_data_sent       0x00081f89    0x1a  Code  Lc  udi_msc.o [1]
+udi_msc_disable         0x00081d2b     0xc  Code  Gb  udi_msc.o [1]
+udi_msc_enable          0x00081ced    0x3e  Code  Gb  udi_msc.o [1]
+udi_msc_getsetting      0x00081d9d     0x4  Code  Gb  udi_msc.o [1]
+udi_msc_nb_block        0x20070044     0x2  Data  Lc  udi_msc.o [1]
+udi_msc_nb_lun          0x2007004c     0x1  Data  Lc  udi_msc.o [1]
+udi_msc_process_trans   0x000821b7    0x4e  Code  Gb  udi_msc.o [1]
+udi_msc_sbc_trans       0x00082165    0x52  Code  Lc  udi_msc.o [1]
+udi_msc_sense           0x20074e80    0x14  Data  Lc  udi_msc.o [1]
+udi_msc_sense_fail      0x00081ff9    0x2c  Code  Lc  udi_msc.o [1]
+udi_msc_sense_fail_busy_or_change
+                        0x0008203d     0xa  Code  Lc  udi_msc.o [1]
+udi_msc_sense_fail_cdb_invalid
+                        0x0008204f     0xa  Code  Lc  udi_msc.o [1]
+udi_msc_sense_fail_hardware
+                        0x00082047     0x8  Code  Lc  udi_msc.o [1]
+udi_msc_sense_fail_not_present
+                        0x00082033     0xa  Code  Lc  udi_msc.o [1]
+udi_msc_sense_pass      0x00082025     0xe  Code  Lc  udi_msc.o [1]
+udi_msc_setup           0x00081d37    0x66  Code  Gb  udi_msc.o [1]
+udi_msc_spc_inquiry     0x00082059    0x76  Code  Lc  udi_msc.o [1]
+udi_msc_spc_mode_sense  0x000820db    0x8a  Code  Lc  udi_msc.o [1]
+udi_msc_trans_ack       0x00082205    0x10  Code  Lc  udi_msc.o [1]
+udi_msc_trans_block     0x00082215    0x5c  Code  Gb  udi_msc.o [1]
+ui_init                 0x00081c91     0xa  Code  Gb  ui.o [1]
+ui_powerdown            0x00081c9b     0x8  Code  Gb  ui.o [1]
+ui_process              0x00081cd1    0x18  Code  Gb  ui.o [1]
+ui_start_read           0x00081cb9     0x6  Code  Gb  ui.o [1]
+ui_start_write          0x00081cc5     0x6  Code  Gb  ui.o [1]
+ui_stop_read            0x00081cbf     0x6  Code  Gb  ui.o [1]
+ui_stop_write           0x00081ccb     0x6  Code  Gb  ui.o [1]
+ui_wakeup               0x00081cb3     0x6  Code  Gb  ui.o [1]
+unaligned_read_page     0x00083f35    0x9c  Code  Lc  nand_flash_translation.o [4]
+unaligned_write_page    0x00083da5    0xd0  Code  Lc  nand_flash_translation.o [4]
+usb_2_memory            0x00082fe5    0x26  Code  Gb  ctrl_access.o [1]
+verify256               0x00084fe5    0xc8  Code  Lc  ecc-sw.o [1]
+write_block_status      0x00084187    0x3a  Code  Lc  nand_flash_management.o [4]
+write_page              0x000848b5    0xa8  Code  Lc  nand_flash_raw_nfc.o [1]
+
+
+[1] = E:\_PY\_work\_GPS\asf-3.7.3\common\services\usb\class\msc\device\example\sam3x8h_sam3x_ek\iar\Debug\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = lib_nand_flash_cortexm3.a
+[5] = rt7M_tl.a
+
+  21 484 bytes of readonly  code memory
+      10 bytes of readwrite code memory
+   1 756 bytes of readonly  data memory
+  36 570 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

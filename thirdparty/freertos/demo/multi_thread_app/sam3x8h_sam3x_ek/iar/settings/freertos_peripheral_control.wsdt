@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+    
+    
+  <CurrentConfigs><Project>freertos_peripheral_control_flash/Debug</Project><Project>freertos_peripheral_control_sram/Debug</Project></CurrentConfigs><CurrentProj>freertos_peripheral_control_flash</CurrentProj><OverviewSelected>0</OverviewSelected></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>97</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>915</ColumnWidth1><ColumnWidth2>244</ColumnWidth2><ColumnWidth3>61</ColumnWidth3></Build>
+      <Find-in-Files>
+        
+        
+        
+      <ColumnWidth0>440</ColumnWidth0><ColumnWidth1>62</ColumnWidth1><ColumnWidth2>754</ColumnWidth2></Find-in-Files>
+      <TerminalIO/>
+    </Static>
+    <Windows>
+      
+      
+    <Wnd0>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-7815-27974</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>&lt;ws&gt;</ExpandedNode><ExpandedNode>freertos_peripheral_control_flash</ExpandedNode><ExpandedNode>freertos_peripheral_control_flash/common</ExpandedNode><ExpandedNode>freertos_peripheral_control_flash/common/components</ExpandedNode><ExpandedNode>freertos_peripheral_control_flash/common/services</ExpandedNode><ExpandedNode>freertos_peripheral_control_flash/common/services/delay</ExpandedNode><ExpandedNode>freertos_peripheral_control_flash/common/services/storage</ExpandedNode><ExpandedNode>freertos_peripheral_control_flash/common/utils</ExpandedNode><ExpandedNode>freertos_peripheral_control_flash/common/utils/stdio</ExpandedNode><ExpandedNode>freertos_peripheral_control_flash/sam</ExpandedNode><ExpandedNode>freertos_peripheral_control_flash/sam/drivers</ExpandedNode><ExpandedNode>freertos_peripheral_control_flash/sam/utils</ExpandedNode><ExpandedNode>freertos_peripheral_control_flash/thirdparty</ExpandedNode><ExpandedNode>freertos_peripheral_control_flash/thirdparty/fatfs</ExpandedNode><ExpandedNode>freertos_peripheral_control_flash/thirdparty/fatfs/fatfs-port-r0.09</ExpandedNode><ExpandedNode>freertos_peripheral_control_flash/thirdparty/fatfs/fatfs-port-r0.09/sam</ExpandedNode><ExpandedNode>freertos_peripheral_control_flash/thirdparty/fatfs/fatfs-r0.09</ExpandedNode><ExpandedNode>freertos_peripheral_control_flash/thirdparty/fatfs/fatfs-r0.09/src</ExpandedNode><ExpandedNode>freertos_peripheral_control_flash/thirdparty/fatfs/fatfs-r0.09/src/ff.c</ExpandedNode><ExpandedNode>freertos_peripheral_control_flash/thirdparty/fatfs/fatfs-r0.09/src/option</ExpandedNode><ExpandedNode>freertos_peripheral_control_flash/thirdparty/freertos</ExpandedNode><ExpandedNode>freertos_peripheral_control_flash/thirdparty/freertos/demo</ExpandedNode><ExpandedNode>freertos_peripheral_control_flash/thirdparty/freertos/demo/peripheral_control</ExpandedNode><ExpandedNode>freertos_peripheral_control_flash/thirdparty/freertos/demo/peripheral_control/datalog-tasks</ExpandedNode><ExpandedNode>freertos_peripheral_control_flash/thirdparty/freertos/demo/peripheral_control/demo-tasks</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd1>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-2127-28490</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-27869-28826</Identity>
+            <TabName>Find in Files</TabName>
+            <Factory>Find-in-Files</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd1></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\periodic_tasks\periodic_task.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>681</SelStart2><SelEnd2>707</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\..\sam\drivers\tc\tc.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>57</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\..\common\utils\stdio\write.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>30</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\..\sam\drivers\usart\usart.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\..\sam\drivers\usart\usart.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>99</YPos2><SelStart2>3576</SelStart2><SelEnd2>3591</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\freertos-7.3.0\source\FreeRTOS_CLI.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>96</XPos2><YPos2>144</YPos2><SelStart2>5768</SelStart2><SelEnd2>5777</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\freertos-7.3.0\source\include\FreeRTOS_CLI.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>28</YPos2><SelStart2>2173</SelStart2><SelEnd2>2196</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\..\common\services\clock\sam3x\sysclk.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>206</YPos2><SelStart2>9569</SelStart2><SelEnd2>9569</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\freertos-7.3.0\source\include\FreeRTOS.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>1</SelStart2><SelEnd2>1</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\demo-tasks.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>17</YPos2><SelStart2>2128</SelStart2><SelEnd2>2128</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\freertos-7.3.0\source\tasks.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>2093</YPos2><SelStart2>69581</SelStart2><SelEnd2>69581</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\FreeRTOSConfig.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>120</YPos2><SelStart2>6348</SelStart2><SelEnd2>6348</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>147</YPos2><SelStart2>5343</SelStart2><SelEnd2>5343</SelEnd2></Tab><ActiveTab>12</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\demo-tasks\CLI-commands.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>514</YPos2><SelStart2>19081</SelStart2><SelEnd2>19081</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\periodic_tasks\periodic_task.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>222</YPos2><SelStart2>8383</SelStart2><SelEnd2>8383</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\..\sam\boards\sam3x_ek\sam3x_ek.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>225</YPos2><SelStart2>8581</SelStart2><SelEnd2>8581</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\fatfs\fatfs-r0.09\src\ffconf.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>441</SelStart2><SelEnd2>441</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\..\common\services\spi\sam_spi\spi_master.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>41</YPos2><SelStart2>1763</SelStart2><SelEnd2>1763</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\datalog-tasks\datalog_tasks.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>335</SelStart2><SelEnd2>335</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\fatfs\fatfs-r0.09\src\ff.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>196</YPos2><SelStart2>6790</SelStart2><SelEnd2>6790</SelEnd2></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-00ef2c98><key>iaridepm.enu1</key></Toolbar-00ef2c98></Sizes></Row0><Row1><Sizes/></Row1></Top><Left><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>717</Bottom><Right>188</Right><x>-2</x><y>-2</y><xscreen>109</xscreen><yscreen>98</yscreen><sizeHorzCX>85156</sizeHorzCX><sizeHorzCY>104034</sizeHorzCY><sizeVertCX>148438</sizeVertCX><sizeVertCY>763270</sizeVertCY></Rect></Wnd0></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>180</Bottom><Right>1282</Right><x>-2</x><y>-2</y><xscreen>1284</xscreen><yscreen>182</yscreen><sizeHorzCX>1003125</sizeHorzCX><sizeHorzCY>193206</sizeHorzCY><sizeVertCX>85156</sizeVertCX><sizeVertCY>104034</sizeVertCY></Rect></Wnd1></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

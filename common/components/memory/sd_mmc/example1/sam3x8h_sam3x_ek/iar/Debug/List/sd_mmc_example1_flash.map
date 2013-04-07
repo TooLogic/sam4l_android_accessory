@@ -1,0 +1,690 @@
+###############################################################################
+#                                                                             #
+# IAR ELF Linker V6.40.2.53884/W32 for ARM              16/Mar/2013  10:14:47 #
+# Copyright 2007-2012 IAR Systems AB.                                         #
+#                                                                             #
+#    Output file  =  E:\_PY\_work\_GPS\asf-3.7.3\common\components\memory\sd_ #
+#                    mmc\example1\sam3x8h_sam3x_ek\iar\Debug\Exe\sd_mmc_examp #
+#                    le1_flash.out                                            #
+#    Map file     =  E:\_PY\_work\_GPS\asf-3.7.3\common\components\memory\sd_ #
+#                    mmc\example1\sam3x8h_sam3x_ek\iar\Debug\List\sd_mmc_exam #
+#                    ple1_flash.map                                           #
+#    Command line =  E:\_PY\_work\_GPS\asf-3.7.3\common\components\memory\sd_ #
+#                    mmc\example1\sam3x8h_sam3x_ek\iar\Debug\Obj\cycle_counte #
+#                    r.o E:\_PY\_work\_GPS\asf-3.7.3\common\components\memory #
+#                    \sd_mmc\example1\sam3x8h_sam3x_ek\iar\Debug\Obj\dmac.o   #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\common\components\memory\sd_ #
+#                    mmc\example1\sam3x8h_sam3x_ek\iar\Debug\Obj\example.o    #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\common\components\memory\sd_ #
+#                    mmc\example1\sam3x8h_sam3x_ek\iar\Debug\Obj\exceptions.o #
+#                     E:\_PY\_work\_GPS\asf-3.7.3\common\components\memory\sd #
+#                    _mmc\example1\sam3x8h_sam3x_ek\iar\Debug\Obj\hsmci.o     #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\common\components\memory\sd_ #
+#                    mmc\example1\sam3x8h_sam3x_ek\iar\Debug\Obj\init.o       #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\common\components\memory\sd_ #
+#                    mmc\example1\sam3x8h_sam3x_ek\iar\Debug\Obj\interrupt_sa #
+#                    m_nvic.o E:\_PY\_work\_GPS\asf-3.7.3\common\components\m #
+#                    emory\sd_mmc\example1\sam3x8h_sam3x_ek\iar\Debug\Obj\led #
+#                    .o E:\_PY\_work\_GPS\asf-3.7.3\common\components\memory\ #
+#                    sd_mmc\example1\sam3x8h_sam3x_ek\iar\Debug\Obj\pio.o     #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\common\components\memory\sd_ #
+#                    mmc\example1\sam3x8h_sam3x_ek\iar\Debug\Obj\pio_handler. #
+#                    o E:\_PY\_work\_GPS\asf-3.7.3\common\components\memory\s #
+#                    d_mmc\example1\sam3x8h_sam3x_ek\iar\Debug\Obj\pmc.o      #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\common\components\memory\sd_ #
+#                    mmc\example1\sam3x8h_sam3x_ek\iar\Debug\Obj\read.o       #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\common\components\memory\sd_ #
+#                    mmc\example1\sam3x8h_sam3x_ek\iar\Debug\Obj\sd_mmc.o     #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\common\components\memory\sd_ #
+#                    mmc\example1\sam3x8h_sam3x_ek\iar\Debug\Obj\sleep.o      #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\common\components\memory\sd_ #
+#                    mmc\example1\sam3x8h_sam3x_ek\iar\Debug\Obj\startup_sam3 #
+#                    x.o E:\_PY\_work\_GPS\asf-3.7.3\common\components\memory #
+#                    \sd_mmc\example1\sam3x8h_sam3x_ek\iar\Debug\Obj\sysclk.o #
+#                     E:\_PY\_work\_GPS\asf-3.7.3\common\components\memory\sd #
+#                    _mmc\example1\sam3x8h_sam3x_ek\iar\Debug\Obj\system_sam3 #
+#                    x.o E:\_PY\_work\_GPS\asf-3.7.3\common\components\memory #
+#                    \sd_mmc\example1\sam3x8h_sam3x_ek\iar\Debug\Obj\time_tic #
+#                    k_sam.o E:\_PY\_work\_GPS\asf-3.7.3\common\components\me #
+#                    mory\sd_mmc\example1\sam3x8h_sam3x_ek\iar\Debug\Obj\uart #
+#                    .o E:\_PY\_work\_GPS\asf-3.7.3\common\components\memory\ #
+#                    sd_mmc\example1\sam3x8h_sam3x_ek\iar\Debug\Obj\usart.o   #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\common\components\memory\sd_ #
+#                    mmc\example1\sam3x8h_sam3x_ek\iar\Debug\Obj\usart_serial #
+#                    .o E:\_PY\_work\_GPS\asf-3.7.3\common\components\memory\ #
+#                    sd_mmc\example1\sam3x8h_sam3x_ek\iar\Debug\Obj\write.o   #
+#                    -o E:\_PY\_work\_GPS\asf-3.7.3\common\components\memory\ #
+#                    sd_mmc\example1\sam3x8h_sam3x_ek\iar\Debug\Exe\sd_mmc_ex #
+#                    ample1_flash.out --redirect _Printf=_PrintfLarge         #
+#                    --redirect _Scanf=_ScanfSmall --map                      #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\common\components\memory\sd_ #
+#                    mmc\example1\sam3x8h_sam3x_ek\iar\Debug\List\sd_mmc_exam #
+#                    ple1_flash.map --config E:\_PY\_work\_GPS\asf-3.7.3\comm #
+#                    on\components\memory\sd_mmc\example1\sam3x8h_sam3x_ek\ia #
+#                    r/../../../../../../../sam/utils/linker_scripts/sam3x/sa #
+#                    m3x8/iar/flash.icf --remarks --entry                     #
+#                    __iar_program_start --no_exceptions --vfe                #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor                     = *
+__Heap_Handler                = Basic
+__SystemLibrary               = DLib
+__dlib_dynamic_initialization = normal
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x00080000 { ro section .intvec };
+"P1":  place in [from 0x00080000 to 0x000fffff] { ro };
+"P2":  place in [from 0x20070000 to 0x20087fff] { rw, block CSTACK, block HEAP };
+
+  Section             Kind        Address    Size  Object
+  -------             ----        -------    ----  ------
+"A1":                                        0xf4
+  .intvec                      0x00080000    0xf4  <Block>
+    .intvec           const    0x00080000    0xf4  startup_sam3x.o [1]
+                             - 0x000800f4    0xf4
+
+"P1":                                      0x4440
+  .text               ro code  0x000800f4   0xeba  xprintflarge.o [3]
+  .text               ro code  0x00080fae    0x20  xmbtowc.o [3]
+  .text               ro code  0x00080fce    0x22  zero_init3.o [5]
+  .text               ro code  0x00080ff0    0x16  strchr.o [5]
+  .text               ro code  0x00081006     0x2  exceptions.o [1]
+  .text               ro code  0x00081008    0x36  strlen.o [5]
+  .text               ro code  0x00081040    0x58  memchr.o [5]
+  .text               ro code  0x00081098     0xa  xmbcurmax.o [3]
+  .text               ro code  0x000810a4    0xb0  xxmemxmalloc.o [3]
+  .text               ro code  0x00081154    0x1a  xwctomb.o [3]
+  .text               ro code  0x00081170    0x76  ABImemcpy.o [5]
+  .text               ro code  0x000811e8    0x80  xxmemxfree.o [3]
+  .text               ro code  0x00081268    0xee  I64DivMod.o [5]
+  .text               ro code  0x00081356    0x42  xdnorm.o [4]
+  .text               ro code  0x00081398    0x2e  DblCmpLe.o [4]
+  .text               ro code  0x000813c8   0x1a2  DblMul.o [4]
+  .text               ro code  0x0008156c   0x246  DblDiv.o [4]
+  .text               ro code  0x000817b4    0x2c  DblToI32.o [4]
+  .text               ro code  0x000817e0    0x1c  I32ToDbl.o [4]
+  .text               ro code  0x000817fc   0x180  DblSub.o [4]
+  .text               ro code  0x0008197c    0x6c  localeconv.o [3]
+  .text               ro code  0x000819e8     0xe  div.o [3]
+  .text               ro code  0x000819f8    0x14  setlocale.o [3]
+  .text               ro code  0x00081a0c    0x60  xencoding_sb.o [3]
+  .text               ro code  0x00081a6c    0x28  xgetmemchunk.o [3]
+  .text               ro code  0x00081a94     0x2  I64DivZer.o [5]
+  .text               ro code  0x00081a98    0xd4  DblAdd.o [4]
+  .text               ro code  0x00081b6c     0x2  xtls.o [3]
+  Veneer              ro code  0x00081b70     0x8  - Linker created -
+  .text               ro code  0x00081b78   0xc68  sd_mmc.o [1]
+  .text               ro code  0x000827e0   0x398  hsmci.o [1]
+  .text               ro code  0x00082b78   0x192  pmc.o [1]
+  .text               ro code  0x00082d0c    0x96  dmac.o [1]
+  .text               ro code  0x00082da4   0xa28  example.o [1]
+  .text               ro code  0x000837cc    0x52  uart.o [1]
+  .text               ro code  0x00083820    0xf0  usart.o [1]
+  .text               ro code  0x00083910    0xa4  sysclk.o [1]
+  .text               ro code  0x000839b4    0xdc  init.o [1]
+  .text               ro code  0x00083a90    0x46  time_tick_sam.o [1]
+  .text               ro code  0x00083ad8    0x24  printf.o [3]
+  .text               ro code  0x00083afc     0x6  ABImemclr4.o [5]
+  .text               ro code  0x00083b04   0x124  system_sam3x.o [1]
+  .text               ro code  0x00083c28   0x1c0  pio.o [1]
+  .text               ro code  0x00083de8    0x32  ABImemset48.o [5]
+  .text               ro code  0x00083e1a    0xd6  xfspos.o [3]
+  .text               ro code  0x00083ef0    0xb0  fflush.o [3]
+  .text               ro code  0x00083fa0     0xc  xfgpos.o [3]
+  .text               ro code  0x00083fac     0xc  read.o [1]
+  .text               ro code  0x00083fb8     0xc  errno.o [3]
+  .text               ro code  0x00083fc4     0x4  xsyslock_nop.o [3]
+  .text               ro code  0x00083fc8    0x3c  write.o [1]
+  .text               ro code  0x00084004    0xb6  xfwprep.o [3]
+  .text               ro code  0x000840ba    0x22  fseek.o [3]
+  .text               ro code  0x000840dc    0xa6  packbits_init3.o [5]
+  .text               ro code  0x00084184    0x80  pio_handler.o [1]
+  .text               ro code  0x00084204    0x80  xfofind.o [3]
+  .text               ro code  0x00084284    0x7a  fclose.o [3]
+  .text               ro code  0x00084300    0x58  xcloseall.o [3]
+  .text               ro code  0x00084358    0x56  fputc.o [3]
+  .text               ro code  0x000843b0    0x30  startup_sam3x.o [1]
+  .text               ro code  0x000843e0     0xc  cstartup_M.o [5]
+  .text               ro code  0x000843ec    0x16  cmain.o [5]
+  .text               ro code  0x00084404    0x28  data_init3.o [5]
+  .text               ro code  0x0008442c     0x4  exit.o [3]
+  .text               ro code  0x00084430     0xe  cexit.o [5]
+  .text               ro code  0x00084440     0xc  XXexit.o [5]
+  .iar.init_table     const    0x0008444c    0x2c  - Linker created -
+  .text               ro code  0x00084478    0x16  xprout.o [3]
+  .text               ro code  0x00084490     0xc  putchar.o [3]
+  .text               ro code  0x0008449c     0x0  cstart_closeall.o [5]
+  .rodata             const    0x0008449c     0x0  zero_init3.o [5]
+  .rodata             const    0x0008449c     0x0  packbits_init3.o [5]
+  Initializer bytes   ro data  0x0008449c    0x97  <for P2 s0>
+                             - 0x00084533  0x443f
+
+"P2", part 1 of 3:                          0x164
+  P2 s0                        0x20070000   0x164  <Init block>
+    __DLIB_PERTHREAD  inited   0x20070000    0x50  localeconv.o [3]
+    .data             inited   0x20070050    0x40  xfiles.o [3]
+    .data             inited   0x20070090    0x40  xfiles.o [3]
+    .data             inited   0x200700d0    0x40  xfiles.o [3]
+    .data             inited   0x20070110    0x24  sd_mmc.o [1]
+    .data             inited   0x20070134    0x20  xfiles.o [3]
+    .textrw           inited   0x20070154     0xa  cycle_counter.o [1]
+    .data             inited   0x2007015e     0x1  interrupt_sam_nvic.o [1]
+    .data             inited   0x20070160     0x4  system_sam3x.o [1]
+                             - 0x20070164   0x164
+
+"P2", part 2 of 3:                         0x11dc
+  .bss                zero     0x20070164  0x1000  example.o [1]
+  .bss                zero     0x20071164    0x74  pio_handler.o [1]
+  __DLIB_PERTHREAD    zero     0x200711d8    0x74  setlocale.o [3]
+  .bss                zero     0x2007124c    0x50  xfiles.o [3]
+  .bss                zero     0x2007129c    0x50  xfiles.o [3]
+  .bss                zero     0x200712ec    0x18  example.o [1]
+  .bss                zero     0x20071304     0xc  sd_mmc.o [1]
+  .bss                zero     0x20071310     0x8  hsmci.o [1]
+  .bss                zero     0x20071318     0x8  write.o [1]
+  .bss                zero     0x20071320     0x8  xxmemxmalloc.o [3]
+  .bss                zero     0x20071328     0x4  read.o [1]
+  .bss                zero     0x2007132c     0x4  time_tick_sam.o [1]
+  .bss                zero     0x20071330     0x4  usart.o [1]
+  .bss                zero     0x20071334     0x4  xgetmemchunk.o [3]
+  __DLIB_PERTHREAD    zero     0x20071338     0x4  errno.o [3]
+                             - 0x2007133c  0x11d8
+
+"P2", part 3 of 3:                         0x4000
+  CSTACK                       0x20071340  0x2000  <Block>
+    CSTACK            uninit   0x20071340  0x2000  <Block tail>
+  HEAP                         0x20073340  0x2000  <Block>
+    HEAP              uninit   0x20073340  0x2000  <Block tail>
+                             - 0x20075340  0x4000
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x11d8:
+          0x20070164  0x11d8
+
+Copy/packbits (__iar_packbits_init3)
+    1 source range, total size 0x97 (42% of destination):
+          0x0008449c    0x97
+    1 destination range, total size 0x164:
+          0x20070000   0x164
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                ro code  rw code  ro data  rw data
+    ------                -------  -------  -------  -------
+E:\_PY\_work\_GPS\asf-3.7.3\common\components\memory\sd_mmc\example1\sam3x8h_sam3x_ek\iar\Debug\Obj: [1]
+    cycle_counter.o                     10        4
+    dmac.o                    150
+    example.o               2 600                      4 120
+    exceptions.o                2
+    hsmci.o                   920                          8
+    init.o                    220
+    interrupt_sam_nvic.o                                   1
+    pio.o                     448
+    pio_handler.o             128                        116
+    pmc.o                     402
+    read.o                     12                          4
+    sd_mmc.o                3 176                15       48
+    startup_sam3x.o            48               244
+    sysclk.o                  164
+    system_sam3x.o            292                 3        4
+    time_tick_sam.o            70                          4
+    uart.o                     82
+    usart.o                   240                          4
+    write.o                    60                          8
+    --------------------------------------------------------
+    Total:                  9 014       10      266    4 317
+
+command line: [2]
+    --------------------------------------------------------
+    Total:
+
+dl7M_tlf.a: [3]
+    div.o                      14
+    errno.o                    12                          4
+    exit.o                      4
+    fclose.o                  122
+    fflush.o                  176
+    fputc.o                    86
+    fseek.o                    34
+    localeconv.o              108                33       80
+    printf.o                   36
+    putchar.o                  12
+    setlocale.o                20                        116
+    xcloseall.o                88
+    xencoding_sb.o             96
+    xfgpos.o                   12
+    xfiles.o                                     96      384
+    xfofind.o                 128
+    xfspos.o                  214
+    xfwprep.o                 182
+    xgetmemchunk.o             40                          4
+    xmbcurmax.o                10
+    xmbtowc.o                  32
+    xprintflarge.o          3 770
+    xprout.o                   22
+    xsyslock_nop.o              4
+    xtls.o                      2
+    xwctomb.o                  26
+    xxmemxfree.o              128
+    xxmemxmalloc.o            176                          8
+    --------------------------------------------------------
+    Total:                  5 554               129      596
+
+m7M_tl.a: [4]
+    DblAdd.o                  212
+    DblCmpLe.o                 46
+    DblDiv.o                  582
+    DblMul.o                  418
+    DblSub.o                  384
+    DblToI32.o                 44
+    I32ToDbl.o                 28
+    xdnorm.o                   66
+    --------------------------------------------------------
+    Total:                  1 780
+
+rt7M_tl.a: [5]
+    ABImemclr4.o                6
+    ABImemcpy.o               118
+    ABImemset48.o              50
+    I64DivMod.o               238
+    I64DivZer.o                 2
+    XXexit.o                   12
+    cexit.o                    14
+    cmain.o                    22
+    cstart_closeall.o
+    cstartup_M.o               12
+    data_init3.o               40
+    memchr.o                   88
+    packbits_init3.o          166
+    strchr.o                   22
+    strlen.o                   54
+    zero_init3.o               34
+    --------------------------------------------------------
+    Total:                    878
+
+    Gaps                       42                          1
+    Linker created              8                44   16 384
+------------------------------------------------------------
+    Grand Total:           17 276       10      439   21 298
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address    Size  Type      Object
+-----                      -------    ----  ----      ------
+.intvec$$Base           0x00080000           --   Gb  - Linker created -
+.intvec$$Limit          0x000800f4           --   Gb  - Linker created -
+?main                   0x000843ed          Code  Gb  cmain.o [5]
+ADC_Handler             0x00081007     0x2  Code  Wk  exceptions.o [1]
+BusFault_Handler        0x00081007     0x2  Code  Wk  exceptions.o [1]
+CAN0_Handler            0x00081007     0x2  Code  Wk  exceptions.o [1]
+CAN1_Handler            0x00081007     0x2  Code  Wk  exceptions.o [1]
+CSTACK$$Base            0x20071340           --   Gb  - Linker created -
+CSTACK$$Limit           0x20073340           --   Gb  - Linker created -
+DACC_Handler            0x00081007     0x2  Code  Wk  exceptions.o [1]
+DMAC_Handler            0x00081007     0x2  Code  Wk  exceptions.o [1]
+DebugMon_Handler        0x00081007     0x2  Code  Wk  exceptions.o [1]
+Dummy_Handler           0x00081007     0x2  Code  Gb  exceptions.o [1]
+EFC0_Handler            0x00081007     0x2  Code  Wk  exceptions.o [1]
+EFC1_Handler            0x00081007     0x2  Code  Wk  exceptions.o [1]
+EMAC_Handler            0x00081007     0x2  Code  Wk  exceptions.o [1]
+HEAP$$Base              0x20073340           --   Gb  - Linker created -
+HEAP$$Limit             0x20075340           --   Gb  - Linker created -
+HSMCI_Handler           0x00081007     0x2  Code  Wk  exceptions.o [1]
+HardFault_Handler       0x00081007     0x2  Code  Wk  exceptions.o [1]
+MemManage_Handler       0x00081007     0x2  Code  Wk  exceptions.o [1]
+NMI_Handler             0x00081007     0x2  Code  Wk  exceptions.o [1]
+PIOA_Handler            0x000841c3     0x6  Code  Gb  pio_handler.o [1]
+PIOB_Handler            0x000841c9     0x6  Code  Gb  pio_handler.o [1]
+PIOC_Handler            0x000841cf     0x6  Code  Gb  pio_handler.o [1]
+PIOD_Handler            0x000841d5     0x6  Code  Gb  pio_handler.o [1]
+PIOE_Handler            0x000841db     0x6  Code  Gb  pio_handler.o [1]
+PIOF_Handler            0x000841e1     0x6  Code  Gb  pio_handler.o [1]
+PMC_Handler             0x00081007     0x2  Code  Wk  exceptions.o [1]
+PWM_Handler             0x00081007     0x2  Code  Wk  exceptions.o [1]
+PendSV_Handler          0x00081007     0x2  Code  Wk  exceptions.o [1]
+RSTC_Handler            0x00081007     0x2  Code  Wk  exceptions.o [1]
+RTC_Handler             0x00081007     0x2  Code  Wk  exceptions.o [1]
+RTT_Handler             0x00081007     0x2  Code  Wk  exceptions.o [1]
+Region$$Table$$Base     0x0008444c           --   Gb  - Linker created -
+Region$$Table$$Limit    0x00084478           --   Gb  - Linker created -
+Reset_Handler           0x000843dd     0x4  Code  Gb  startup_sam3x.o [1]
+SDMMC_UNSTUFF_BITS      0x00081b79    0x54  Code  Lc  sd_mmc.o [1]
+SDRAMC_Handler          0x00081007     0x2  Code  Wk  exceptions.o [1]
+SMC_Handler             0x00081007     0x2  Code  Wk  exceptions.o [1]
+SPI0_Handler            0x00081007     0x2  Code  Wk  exceptions.o [1]
+SPI1_Handler            0x00081007     0x2  Code  Wk  exceptions.o [1]
+SSC_Handler             0x00081007     0x2  Code  Wk  exceptions.o [1]
+SUPC_Handler            0x00081007     0x2  Code  Wk  exceptions.o [1]
+SVC_Handler             0x00081007     0x2  Code  Wk  exceptions.o [1]
+SysTick_Handler         0x00083a91     0xa  Code  Gb  time_tick_sam.o [1]
+SystemCoreClock         0x20070160     0x4  Data  Gb  system_sam3x.o [1]
+SystemCoreClockUpdate   0x00083b05    0xb4  Code  Gb  system_sam3x.o [1]
+TC0_Handler             0x00081007     0x2  Code  Wk  exceptions.o [1]
+TC1_Handler             0x00081007     0x2  Code  Wk  exceptions.o [1]
+TC2_Handler             0x00081007     0x2  Code  Wk  exceptions.o [1]
+TC3_Handler             0x00081007     0x2  Code  Wk  exceptions.o [1]
+TC4_Handler             0x00081007     0x2  Code  Wk  exceptions.o [1]
+TC5_Handler             0x00081007     0x2  Code  Wk  exceptions.o [1]
+TC6_Handler             0x00081007     0x2  Code  Wk  exceptions.o [1]
+TC7_Handler             0x00081007     0x2  Code  Wk  exceptions.o [1]
+TC8_Handler             0x00081007     0x2  Code  Wk  exceptions.o [1]
+TRNG_Handler            0x00081007     0x2  Code  Wk  exceptions.o [1]
+TWI0_Handler            0x00081007     0x2  Code  Wk  exceptions.o [1]
+TWI1_Handler            0x00081007     0x2  Code  Wk  exceptions.o [1]
+UART_Handler            0x00081007     0x2  Code  Wk  exceptions.o [1]
+UOTGHS_Handler          0x00081007     0x2  Code  Wk  exceptions.o [1]
+USART0_Handler          0x00081007     0x2  Code  Wk  exceptions.o [1]
+USART1_Handler          0x00081007     0x2  Code  Wk  exceptions.o [1]
+USART2_Handler          0x00081007     0x2  Code  Wk  exceptions.o [1]
+USART3_Handler          0x00081007     0x2  Code  Wk  exceptions.o [1]
+UsageFault_Handler      0x00081007     0x2  Code  Wk  exceptions.o [1]
+WDT_Handler             0x00081007     0x2  Code  Wk  exceptions.o [1]
+_Close_all              0x00084301    0x58  Code  Gb  xcloseall.o [3]
+_EncodingSb_Mbtowc      0x00081a27    0x30  Code  Gb  xencoding_sb.o [3]
+_EncodingSb_Wctomb      0x00081a0d    0x1a  Code  Gb  xencoding_sb.o [3]
+_Files                  0x20070134    0x20  Data  Gb  xfiles.o [3]
+_Fofree                 0x00084205    0x7a  Code  Gb  xfofind.o [3]
+_Fspos                  0x00083e1b    0xd6  Code  Gb  xfspos.o [3]
+_Fwprep                 0x00084005    0xb6  Code  Gb  xfwprep.o [3]
+_GenldLarge             0x00080d27   0x238  Code  Lc  xprintflarge.o [3]
+_IsdstStr               0x200711dc     0x4  Data  Gb  setlocale.o [3]
+_LdtobLarge             0x00080aa9   0x278  Code  Lc  xprintflarge.o [3]
+_LitobLarge             0x00080993   0x10e  Code  Lc  xprintflarge.o [3]
+_LocaleEncoding         0x000819f9     0xe  Code  Gb  setlocale.o [3]
+_LocaleReturnString     0x200711fc    0x50  Data  Lc  setlocale.o [3]
+_Locale_Profile         0x200711e0    0x1c  Data  Gb  setlocale.o [3]
+_Locale_lconv           0x20070000    0x50  Data  Gb  localeconv.o [3]
+_Mbtowc                 0x00080faf    0x20  Code  Gb  xmbtowc.o [3]
+_Nnl                    0x00083fa1     0xc  Code  Gb  xfgpos.o [3]
+_PrintfLarge            0x000800f5   0x5b6  Code  Gb  xprintflarge.o [3]
+_Prout                  0x00084479    0x16  Code  Gb  xprout.o [3]
+_PutcharsLarge          0x00080f5f    0x2e  Code  Lc  xprintflarge.o [3]
+_PutstrLarge            0x000806bb   0x2d2  Code  Lc  xprintflarge.o [3]
+_TzoneStr               0x200711d8     0x4  Data  Gb  setlocale.o [3]
+_Wctomb                 0x00081155    0x1a  Code  Gb  xwctomb.o [3]
+__aeabi_cdcmple         0x00081399          Code  Gb  DblCmpLe.o [4]
+__aeabi_d2uiz           0x000817b5          Code  Gb  DblToI32.o [4]
+__aeabi_ddiv            0x0008156d          Code  Gb  DblDiv.o [4]
+__aeabi_dmul            0x000813c9          Code  Gb  DblMul.o [4]
+__aeabi_dsub            0x000817fd          Code  Gb  DblSub.o [4]
+__aeabi_errno_addr      0x00083fb9     0x6  Code  Gb  errno.o [3]
+__aeabi_ldiv0           0x00081a95          Code  Gb  I64DivZer.o [5]
+__aeabi_memclr4         0x00083afd          Code  Gb  ABImemclr4.o [5]
+__aeabi_memcpy          0x00081171          Code  Gb  ABImemcpy.o [5]
+__aeabi_memcpy4         0x00081191          Code  Gb  ABImemcpy.o [5]
+__aeabi_memcpy8         0x00081191          Code  Gb  ABImemcpy.o [5]
+__aeabi_ui2d            0x000817e1          Code  Gb  I32ToDbl.o [4]
+__aeabi_uldivmod        0x00081269          Code  Gb  I64DivMod.o [5]
+__cexit_closeall        0x00084433          Code  Gb  cexit.o [5]
+__close                 0x00083fad     0x4  Code  Gb  read.o [1]
+__cmain                 0x000843ed          Code  Gb  cmain.o [5]
+__cstart_closeall       0x0008449c          Data  Gb  cstart_closeall.o [5]
+__data_Aldata           0x20071320     0x8  Data  Gb  xxmemxmalloc.o [3]
+__data_GetMemChunk      0x00081a6d    0x28  Code  Gb  xgetmemchunk.o [3]
+__exit                  0x00084441          Code  Gb  XXexit.o [5]
+__iar_Dnorm             0x00081357    0x42  Code  Gb  xdnorm.o [4]
+__iar_Errno             0x20071338     0x4  Data  Gb  errno.o [3]
+__iar_Locale_lconv_init
+                        0x0008197d    0x3a  Code  Gb  localeconv.o [3]
+__iar_Lockfilelock      0x00083fc5     0x2  Code  Gb  xsyslock_nop.o [3]
+__iar_Mbcurmax          0x00081099     0xa  Code  Gb  xmbcurmax.o [3]
+__iar_Memchr            0x00081041          Code  Gb  memchr.o [5]
+__iar_Memset4_word      0x00083de9          Code  Gb  ABImemset48.o [5]
+__iar_Memset8_word      0x00083de9          Code  Gb  ABImemset48.o [5]
+__iar_Stderr            0x200700d0    0x40  Data  Gb  xfiles.o [3]
+__iar_Stdin             0x20070050    0x40  Data  Gb  xfiles.o [3]
+__iar_Stdout            0x20070090    0x40  Data  Gb  xfiles.o [3]
+__iar_Strchr            0x00080ff1          Code  Gb  strchr.o [5]
+__iar_Unlockfilelock    0x00083fc7     0x2  Code  Gb  xsyslock_nop.o [3]
+__iar_d2uiz             0x000817c1          Code  Gb  DblToI32.o [4]
+__iar_dadd              0x00081a99          Code  Gb  DblAdd.o [4]
+__iar_data_init3        0x00084405    0x28  Code  Gb  data_init3.o [5]
+__iar_dlib_perthread_access
+                        0x00081b6d     0x2  Code  Gb  xtls.o [3]
+__iar_dsub              0x00081811          Code  Gb  DblSub.o [4]
+__iar_dsubStart         0x00081823          Code  Gb  DblSub.o [4]
+__iar_packbits_init3    0x000840dd    0xa6  Code  Gb  packbits_init3.o [5]
+__iar_program_start     0x000843e1          Code  Gb  cstartup_M.o [5]
+__iar_ui2d              0x000817e5          Code  Gb  I32ToDbl.o [4]
+__iar_zero_init3        0x00080fcf    0x22  Code  Gb  zero_init3.o [5]
+__low_level_init        0x000843b1    0x20  Code  Gb  startup_sam3x.o [1]
+__lseek                 0x00083fb5     0x4  Code  Gb  read.o [1]
+__region_NFC_RAM_end__ {Abs}
+                        0x20100fff           --   Gb  command line/config [2]
+__region_NFC_RAM_start__ {Abs}
+                        0x20100000           --   Gb  command line/config [2]
+__region_RAM0_end__ {Abs}
+                        0x2000ffff           --   Gb  command line/config [2]
+__region_RAM0_size__ {Abs}
+                        0x00010000           --   Gb  command line/config [2]
+__region_RAM0_start__ {Abs}
+                        0x20000000           --   Gb  command line/config [2]
+__region_RAM1_end__ {Abs}
+                        0x20087fff           --   Gb  command line/config [2]
+__region_RAM1_size__ {Abs}
+                        0x00008000           --   Gb  command line/config [2]
+__region_RAM1_start__ {Abs}
+                        0x20080000           --   Gb  command line/config [2]
+__region_RAM_end__ {Abs}
+                        0x20087fff           --   Gb  command line/config [2]
+__region_RAM_size__ {Abs}
+                        0x00018000           --   Gb  command line/config [2]
+__region_RAM_start__ {Abs}
+                        0x20070000           --   Gb  command line/config [2]
+__region_ROM_end__ {Abs}
+                        0x000fffff           --   Gb  command line/config [2]
+__region_ROM_size__ {Abs}
+                        0x00080000           --   Gb  command line/config [2]
+__region_ROM_start__ {Abs}
+                        0x00080000           --   Gb  command line/config [2]
+__vector_table          0x00080000    0xf4  Data  Gb  startup_sam3x.o [1]
+__write                 0x00083fc9    0x3c  Code  Gb  write.o [1]
+_call_main              0x000843f9          Code  Gb  cmain.o [5]
+_exit                   0x00084431          Code  Gb  cexit.o [5]
+_main                   0x000843ff          Code  Gb  cmain.o [5]
+board_init              0x000839b5    0xdc  Code  Gb  init.o [1]
+buf_cia                 0x200712ec    0x18  Data  Lc  example.o [1]
+buf_test                0x20070164  0x1000  Data  Lc  example.o [1]
+div                     0x000819e9     0xe  Code  Gb  div.o [3]
+dmac_channel_disable    0x00082d17     0x4  Code  Gb  dmac.o [1]
+dmac_channel_enable     0x00082d13     0x4  Code  Gb  dmac.o [1]
+dmac_channel_set_configuration
+                        0x00082d5d     0xa  Code  Gb  dmac.o [1]
+dmac_channel_set_ctrlA  0x00082d49     0xa  Code  Gb  dmac.o [1]
+dmac_channel_set_ctrlB  0x00082d53     0xa  Code  Gb  dmac.o [1]
+dmac_channel_set_descriptor_addr
+                        0x00082d3f     0xa  Code  Gb  dmac.o [1]
+dmac_channel_set_destination_addr
+                        0x00082d35     0xa  Code  Gb  dmac.o [1]
+dmac_channel_set_source_addr
+                        0x00082d2b     0xa  Code  Gb  dmac.o [1]
+dmac_channel_single_buf_transfer_init
+                        0x00082d67    0x3c  Code  Gb  dmac.o [1]
+dmac_enable             0x00082d0d     0x6  Code  Gb  dmac.o [1]
+ebuf                    0x2007124c    0x50  Data  Lc  xfiles.o [3]
+exit                    0x0008442d     0x4  Code  Gb  exit.o [3]
+fclose                  0x00084285    0x7a  Code  Gb  fclose.o [3]
+fflush                  0x00083f67    0x34  Code  Gb  fflush.o [3]
+fflushOne               0x00083ef1    0x76  Code  Lc  fflush.o [3]
+fputc                   0x00084359    0x56  Code  Gb  fputc.o [3]
+free                    0x000811e9    0x7a  Code  Gb  xxmemxfree.o [3]
+fseek                   0x000840bb    0x22  Code  Gb  fseek.o [3]
+g_interrupt_enabled     0x2007015e     0x1  Data  Gb  interrupt_sam_nvic.o [1]
+g_ms_ticks              0x2007132c     0x4  Data  Gb  time_tick_sam.o [1]
+gs_interrupt_sources    0x20071164    0x70  Data  Lc  pio_handler.o [1]
+gs_ul_nb_sources        0x200711d4     0x4  Data  Lc  pio_handler.o [1]
+hsmci_adtc_start        0x0008295f    0x82  Code  Gb  hsmci.o [1]
+hsmci_block_size        0x20071310     0x2  Data  Lc  hsmci.o [1]
+hsmci_deselect_device   0x00082901     0x2  Code  Gb  hsmci.o [1]
+hsmci_get_bus_width     0x000828a1     0xa  Code  Gb  hsmci.o [1]
+hsmci_get_response      0x00082937     0x6  Code  Gb  hsmci.o [1]
+hsmci_get_response_128  0x0008293d    0x22  Code  Gb  hsmci.o [1]
+hsmci_init              0x00082879    0x28  Code  Gb  hsmci.o [1]
+hsmci_is_high_speed_capable
+                        0x000828ab     0x4  Code  Gb  hsmci.o [1]
+hsmci_nb_block          0x20071312     0x2  Data  Lc  hsmci.o [1]
+hsmci_read_word         0x000829e1    0x36  Code  Gb  hsmci.o [1]
+hsmci_reset             0x000827e1    0x28  Code  Lc  hsmci.o [1]
+hsmci_select_device     0x000828af    0x52  Code  Gb  hsmci.o [1]
+hsmci_send_clock        0x00082903    0x1c  Code  Gb  hsmci.o [1]
+hsmci_send_cmd          0x0008291f    0x18  Code  Gb  hsmci.o [1]
+hsmci_send_cmd_execute  0x00082809    0x70  Code  Lc  hsmci.o [1]
+hsmci_start_read_blocks
+                        0x00082a1f    0x36  Code  Gb  hsmci.o [1]
+hsmci_start_write_blocks
+                        0x00082a81    0x2c  Code  Gb  hsmci.o [1]
+hsmci_transfert_pos     0x20071314     0x4  Data  Lc  hsmci.o [1]
+hsmci_wait_end_of_read_blocks
+                        0x00082a55    0x2c  Code  Gb  hsmci.o [1]
+hsmci_wait_end_of_write_blocks
+                        0x00082af9    0x2c  Code  Gb  hsmci.o [1]
+localeconv              0x000819b7    0x16  Code  Gb  localeconv.o [3]
+main                    0x00082f01   0x164  Code  Gb  example.o [1]
+main_dump_buffer        0x000832f9    0x42  Code  Lc  example.o [1]
+main_test_memory        0x00083065   0x150  Code  Lc  example.o [1]
+main_test_sdio          0x000831cd   0x110  Code  Lc  example.o [1]
+malloc                  0x000810a5    0xac  Code  Gb  xxmemxmalloc.o [3]
+memchr                  0x00081041          Code  Gb  memchr.o [5]
+mmc_decode_csd          0x00081d41    0x86  Code  Lc  sd_mmc.o [1]
+mmc_trans_multipliers   0x000827a0    0x40  Data  Gb  sd_mmc.o [1]
+obuf                    0x2007129c    0x50  Data  Lc  xfiles.o [3]
+osc_enable              0x00083911    0x3a  Code  Lc  sysclk.o [1]
+osc_wait_ready          0x0008394b    0x28  Code  Lc  sysclk.o [1]
+pio_configure_pin       0x00083cdd    0x82  Code  Gb  pio.o [1]
+pio_configure_pin_group
+                        0x00083d6f    0x76  Code  Gb  pio.o [1]
+pio_get_interrupt_mask  0x00083cc3     0x4  Code  Gb  pio.o [1]
+pio_get_interrupt_status
+                        0x00083cbf     0x4  Code  Gb  pio.o [1]
+pio_handler_process     0x00084185    0x3e  Code  Gb  pio_handler.o [1]
+pio_pull_up             0x00083c29     0xa  Code  Gb  pio.o [1]
+pio_set_input           0x00083c69    0x2e  Code  Gb  pio.o [1]
+pio_set_output          0x00083c97    0x28  Code  Gb  pio.o [1]
+pio_set_peripheral      0x00083c33    0x36  Code  Gb  pio.o [1]
+pio_set_pin_high        0x00083cc7    0x16  Code  Gb  pio.o [1]
+pmc_disable_pllack      0x00082c8d     0xc  Code  Gb  pmc.o [1]
+pmc_enable_periph_clk   0x00082ca3    0x32  Code  Gb  pmc.o [1]
+pmc_is_locked_pllack    0x00082c99     0xa  Code  Gb  pmc.o [1]
+pmc_osc_is_ready_32kxtal
+                        0x00082bdb    0x18  Code  Gb  pmc.o [1]
+pmc_osc_is_ready_mainck
+                        0x00082c81     0xc  Code  Gb  pmc.o [1]
+pmc_switch_mainck_to_fastrc
+                        0x00082bf3    0x52  Code  Gb  pmc.o [1]
+pmc_switch_mainck_to_xtal
+                        0x00082c45    0x3c  Code  Gb  pmc.o [1]
+pmc_switch_mck_to_pllack
+                        0x00082b79    0x42  Code  Gb  pmc.o [1]
+pmc_switch_sclk_to_32kxtal
+                        0x00082bbb    0x20  Code  Gb  pmc.o [1]
+portable_delay_cycles   0x20070155     0xa  Code  Gb  cycle_counter.o [1]
+printf                  0x00083ad9    0x24  Code  Gb  printf.o [3]
+ptr_get                 0x20071328     0x4  Data  Gb  read.o [1]
+ptr_put                 0x2007131c     0x4  Data  Gb  write.o [1]
+putchar                 0x00084491     0xc  Code  Gb  putchar.o [3]
+remove                  0x00083fb1     0x4  Code  Gb  read.o [1]
+sd_cm6_set_high_speed   0x00081cab    0x6c  Code  Lc  sd_mmc.o [1]
+sd_mmc_card             0x2007130c     0x4  Data  Lc  sd_mmc.o [1]
+sd_mmc_cards            0x20070110    0x24  Data  Lc  sd_mmc.o [1]
+sd_mmc_check            0x00082413    0x38  Code  Gb  sd_mmc.o [1]
+sd_mmc_cmd9_mci         0x00081d1f    0x22  Code  Lc  sd_mmc.o [1]
+sd_mmc_configure_slot   0x00081ee1    0x18  Code  Lc  sd_mmc.o [1]
+sd_mmc_deselect_slot    0x00081ef9    0x10  Code  Lc  sd_mmc.o [1]
+sd_mmc_get_capacity     0x00082463    0x18  Code  Gb  sd_mmc.o [1]
+sd_mmc_get_type         0x0008244b    0x18  Code  Gb  sd_mmc.o [1]
+sd_mmc_init             0x000823f3    0x1c  Code  Gb  sd_mmc.o [1]
+sd_mmc_init_read_blocks
+                        0x0008247f    0x70  Code  Gb  sd_mmc.o [1]
+sd_mmc_init_write_blocks
+                        0x00082533    0x48  Code  Gb  sd_mmc.o [1]
+sd_mmc_is_write_protected
+                        0x0008247b     0x4  Code  Gb  sd_mmc.o [1]
+sd_mmc_mci_card_init    0x00081f09   0x2f8  Code  Lc  sd_mmc.o [1]
+sd_mmc_mci_install_mmc  0x00082241   0x184  Code  Lc  sd_mmc.o [1]
+sd_mmc_nb_block_remaining
+                        0x20071308     0x2  Data  Lc  sd_mmc.o [1]
+sd_mmc_nb_block_to_tranfer
+                        0x20071306     0x2  Data  Lc  sd_mmc.o [1]
+sd_mmc_nb_slot          0x0008240f     0x4  Code  Gb  sd_mmc.o [1]
+sd_mmc_sam_systick_used
+                        0x20071305     0x1  Data  Lc  sd_mmc.o [1]
+sd_mmc_select_slot      0x00081e35    0xac  Code  Lc  sd_mmc.o [1]
+sd_mmc_slot_sel         0x20071304     0x1  Data  Lc  sd_mmc.o [1]
+sd_mmc_start_read_blocks
+                        0x000824ef    0x10  Code  Gb  sd_mmc.o [1]
+sd_mmc_start_write_blocks
+                        0x0008257b    0x10  Code  Gb  sd_mmc.o [1]
+sd_mmc_trans_units      0x00082744    0x1c  Data  Gb  sd_mmc.o [1]
+sd_mmc_wait_end_of_read_blocks
+                        0x000824ff    0x34  Code  Gb  sd_mmc.o [1]
+sd_mmc_wait_end_of_write_blocks
+                        0x0008259b    0x2e  Code  Gb  sd_mmc.o [1]
+sd_trans_multipliers    0x00082760    0x40  Data  Gb  sd_mmc.o [1]
+sdio_cmd52              0x00081dd3    0x2a  Code  Lc  sd_mmc.o [1]
+sdio_cmd53              0x00081dfd    0x38  Code  Lc  sd_mmc.o [1]
+sdio_get_max_speed      0x00081bcd    0xd2  Code  Lc  sd_mmc.o [1]
+sdio_read_direct        0x0008262d    0x2e  Code  Gb  sd_mmc.o [1]
+sdio_read_extended      0x00082693    0x52  Code  Gb  sd_mmc.o [1]
+sdio_write_direct       0x00082663    0x30  Code  Gb  sd_mmc.o [1]
+sdio_write_extended     0x000826e5    0x50  Code  Gb  sd_mmc.o [1]
+stdio_base              0x20071318     0x4  Data  Gb  write.o [1]
+strchr                  0x00080ff1          Code  Gb  strchr.o [5]
+strlen                  0x00081009          Code  Gb  strlen.o [5]
+sysclk_init             0x0008397b    0x2e  Code  Gb  sysclk.o [1]
+system_init_flash       0x00083bb9    0x3a  Code  Gb  system_sam3x.o [1]
+time_tick_calc_delay    0x00083acd     0xa  Code  Gb  time_tick_sam.o [1]
+time_tick_get           0x00083ab7     0x6  Code  Gb  time_tick_sam.o [1]
+time_tick_init          0x00083a9b    0x1c  Code  Gb  time_tick_sam.o [1]
+uart_init               0x000837cd    0x30  Code  Gb  uart.o [1]
+uart_read               0x0008380d    0x12  Code  Gb  uart.o [1]
+uart_write              0x000837fd    0x10  Code  Gb  uart.o [1]
+usart_enable_rx         0x000838cd     0x6  Code  Gb  usart.o [1]
+usart_enable_tx         0x000838c7     0x6  Code  Gb  usart.o [1]
+usart_init_rs232        0x00083881    0x34  Code  Gb  usart.o [1]
+usart_read              0x000838f1     0xc  Code  Gb  usart.o [1]
+usart_reset             0x00083861    0x20  Code  Gb  usart.o [1]
+usart_serial_getchar    0x00082e8d    0x6c  Code  Lc  example.o [1]
+usart_serial_init       0x00082da5    0x8a  Code  Lc  example.o [1]
+usart_serial_putchar    0x00082e2f    0x5e  Code  Lc  example.o [1]
+usart_set_async_baudrate
+                        0x00083821    0x40  Code  Lc  usart.o [1]
+usart_write             0x000838db     0xc  Code  Gb  usart.o [1]
+
+
+[1] = E:\_PY\_work\_GPS\asf-3.7.3\common\components\memory\sd_mmc\example1\sam3x8h_sam3x_ek\iar\Debug\Obj
+[2] = command line
+[3] = dl7M_tlf.a
+[4] = m7M_tl.a
+[5] = rt7M_tl.a
+
+  17 276 bytes of readonly  code memory
+      10 bytes of readwrite code memory
+     439 bytes of readonly  data memory
+  21 298 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,477 @@
+###############################################################################
+#                                                                             #
+# IAR ELF Linker V6.40.2.53884/W32 for ARM              10/Mar/2013  15:23:22 #
+# Copyright 2007-2012 IAR Systems AB.                                         #
+#                                                                             #
+#    Output file  =  E:\_PY\_work\_GPS\asf-3.7.3\sam\applications\getting-sta #
+#                    rted\sam3x8h_sam3x_ek\iar\Debug\Exe\getting-started_flas #
+#                    h.out                                                    #
+#    Map file     =  E:\_PY\_work\_GPS\asf-3.7.3\sam\applications\getting-sta #
+#                    rted\sam3x8h_sam3x_ek\iar\Debug\List\getting-started_fla #
+#                    sh.map                                                   #
+#    Command line =  E:\_PY\_work\_GPS\asf-3.7.3\sam\applications\getting-sta #
+#                    rted\sam3x8h_sam3x_ek\iar\Debug\Obj\exceptions.o         #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\sam\applications\getting-sta #
+#                    rted\sam3x8h_sam3x_ek\iar\Debug\Obj\init.o               #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\sam\applications\getting-sta #
+#                    rted\sam3x8h_sam3x_ek\iar\Debug\Obj\interrupt_sam_nvic.o #
+#                     E:\_PY\_work\_GPS\asf-3.7.3\sam\applications\getting-st #
+#                    arted\sam3x8h_sam3x_ek\iar\Debug\Obj\led.o               #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\sam\applications\getting-sta #
+#                    rted\sam3x8h_sam3x_ek\iar\Debug\Obj\main.o               #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\sam\applications\getting-sta #
+#                    rted\sam3x8h_sam3x_ek\iar\Debug\Obj\pio.o                #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\sam\applications\getting-sta #
+#                    rted\sam3x8h_sam3x_ek\iar\Debug\Obj\pio_handler.o        #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\sam\applications\getting-sta #
+#                    rted\sam3x8h_sam3x_ek\iar\Debug\Obj\pmc.o                #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\sam\applications\getting-sta #
+#                    rted\sam3x8h_sam3x_ek\iar\Debug\Obj\read.o               #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\sam\applications\getting-sta #
+#                    rted\sam3x8h_sam3x_ek\iar\Debug\Obj\sleep.o              #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\sam\applications\getting-sta #
+#                    rted\sam3x8h_sam3x_ek\iar\Debug\Obj\startup_sam3x.o      #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\sam\applications\getting-sta #
+#                    rted\sam3x8h_sam3x_ek\iar\Debug\Obj\sysclk.o             #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\sam\applications\getting-sta #
+#                    rted\sam3x8h_sam3x_ek\iar\Debug\Obj\system_sam3x.o       #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\sam\applications\getting-sta #
+#                    rted\sam3x8h_sam3x_ek\iar\Debug\Obj\tc.o                 #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\sam\applications\getting-sta #
+#                    rted\sam3x8h_sam3x_ek\iar\Debug\Obj\uart.o               #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\sam\applications\getting-sta #
+#                    rted\sam3x8h_sam3x_ek\iar\Debug\Obj\usart.o              #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\sam\applications\getting-sta #
+#                    rted\sam3x8h_sam3x_ek\iar\Debug\Obj\usart_serial.o       #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\sam\applications\getting-sta #
+#                    rted\sam3x8h_sam3x_ek\iar\Debug\Obj\write.o -o           #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\sam\applications\getting-sta #
+#                    rted\sam3x8h_sam3x_ek\iar\Debug\Exe\getting-started_flas #
+#                    h.out --redirect _Printf=_PrintfLarge --redirect         #
+#                    _Scanf=_ScanfSmall --map E:\_PY\_work\_GPS\asf-3.7.3\sam #
+#                    \applications\getting-started\sam3x8h_sam3x_ek\iar\Debug #
+#                    \List\getting-started_flash.map --config                 #
+#                    E:\_PY\_work\_GPS\asf-3.7.3\sam\applications\getting-sta #
+#                    rted\sam3x8h_sam3x_ek\iar/../../../../utils/linker_scrip #
+#                    ts/sam3x/sam3x8/iar/flash.icf --remarks --entry          #
+#                    __iar_program_start --no_exceptions --vfe                #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x00080000 { ro section .intvec };
+"P1":  place in [from 0x00080000 to 0x000fffff] { ro };
+"P2":  place in [from 0x20070000 to 0x20087fff] { rw, block CSTACK, block HEAP };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A1":                                       0xf4
+  .intvec                     0x00080000    0xf4  <Block>
+    .intvec          const    0x00080000    0xf4  startup_sam3x.o [1]
+                            - 0x000800f4    0xf4
+
+"P1":                                     0x2424
+  .text              ro code  0x000800f4   0xb2a  xprintflarge.o [3]
+  .text              ro code  0x00080c1e    0x2e  copy_init3.o [5]
+  .text              ro code  0x00080c4c    0x16  strchr.o [5]
+  .text              ro code  0x00080c62    0x22  zero_init3.o [5]
+  .text              ro code  0x00080c84    0x36  strlen.o [5]
+  .text              ro code  0x00080cba     0x2  exceptions.o [1]
+  .text              ro code  0x00080cbc    0x58  memchr.o [5]
+  .text              ro code  0x00080d14    0xee  I64DivMod.o [5]
+  .text              ro code  0x00080e04    0x76  ABImemcpy.o [5]
+  .text              ro code  0x00080e7a    0x42  xdnorm.o [4]
+  .text              ro code  0x00080ebc    0x2e  DblCmpLe.o [4]
+  .text              ro code  0x00080eec   0x1a2  DblMul.o [4]
+  .text              ro code  0x00081090   0x246  DblDiv.o [4]
+  .text              ro code  0x000812d8    0x2c  DblToI32.o [4]
+  .text              ro code  0x00081304    0x1c  I32ToDbl.o [4]
+  .text              ro code  0x00081320   0x180  DblSub.o [4]
+  .text              ro code  0x000814a0     0xe  div.o [3]
+  .text              ro code  0x000814b0     0x2  I64DivZer.o [5]
+  .text              ro code  0x000814b4    0xd4  DblAdd.o [4]
+  .text              ro code  0x00081588   0x4dc  main.o [1]
+  .text              ro code  0x00081a64   0x192  pmc.o [1]
+  .text              ro code  0x00081bf8    0x52  uart.o [1]
+  .text              ro code  0x00081c4c    0xf0  usart.o [1]
+  .text              ro code  0x00081d3c   0x240  pio.o [1]
+  .text              ro code  0x00081f7c    0xa8  tc.o [1]
+  .text              ro code  0x00082024    0x24  printf.o [3]
+  .text              ro code  0x00082048    0xa4  sysclk.o [1]
+  .text              ro code  0x000820ec    0x6c  init.o [1]
+  .text              ro code  0x00082158    0x35  puts.o [3]
+  .text              ro code  0x00082190   0x120  pio_handler.o [1]
+  .text              ro code  0x000822b0   0x124  system_sam3x.o [1]
+  .text              ro code  0x000823d4    0x3c  write.o [1]
+  .text              ro code  0x00082410    0x30  startup_sam3x.o [1]
+  .text              ro code  0x00082440     0xc  cstartup_M.o [5]
+  .text              ro code  0x0008244c    0x16  cmain.o [5]
+  .text              ro code  0x00082464    0x28  data_init3.o [5]
+  .text              ro code  0x0008248c     0x4  exit.o [3]
+  .text              ro code  0x00082490     0xa  cexit.o [5]
+  .text              ro code  0x0008249c     0xc  XXexit.o [5]
+  .text              ro code  0x000824a8    0x28  putchar.o [3]
+  .iar.init_table    const    0x000824d0    0x24  - Linker created -
+  .text              ro code  0x000824f4    0x16  xprout.o [3]
+  .rodata            const    0x0008250a     0x0  zero_init3.o [5]
+  .rodata            const    0x0008250a     0x0  copy_init3.o [5]
+  Initializer bytes  ro data  0x0008250c     0xc  <for P2 s0>
+                            - 0x00082518  0x2424
+
+"P2", part 1 of 3:                           0xc
+  P2 s0                       0x20070000     0xc  <Init block>
+    .data            inited   0x20070000     0x8  main.o [1]
+    .data            inited   0x20070008     0x4  system_sam3x.o [1]
+                            - 0x2007000c     0xc
+
+"P2", part 2 of 3:                          0x84
+  .bss               zero     0x2007000c    0x74  pio_handler.o [1]
+  .bss               zero     0x20070080     0x8  write.o [1]
+  .bss               zero     0x20070088     0x4  read.o [1]
+  .bss               zero     0x2007008c     0x4  usart.o [1]
+                            - 0x20070090    0x84
+
+"P2", part 3 of 3:                        0x2000
+  CSTACK                      0x20070090  0x2000  <Block>
+    CSTACK           uninit   0x20070090  0x2000  <Block tail>
+                            - 0x20072090  0x2000
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x84:
+          0x2007000c  0x84
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0xc:
+          0x0008250c   0xc
+    1 destination range, total size 0xc:
+          0x20070000   0xc
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module           ro code  ro data  rw data
+    ------           -------  -------  -------
+E:\_PY\_work\_GPS\asf-3.7.3\sam\applications\getting-started\sam3x8h_sam3x_ek\iar\Debug\Obj: [1]
+    exceptions.o           2
+    init.o               108
+    main.o             1 244        8        8
+    pio.o                576
+    pio_handler.o        288               116
+    pmc.o                402
+    read.o                                   4
+    startup_sam3x.o       48      244
+    sysclk.o             164
+    system_sam3x.o       292        4        4
+    tc.o                 168
+    uart.o                82
+    usart.o              240                 4
+    write.o               60                 8
+    ------------------------------------------
+    Total:             3 674      256      144
+
+command line: [2]
+    ------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    div.o                 14
+    exit.o                 4
+    printf.o              36
+    putchar.o             40
+    puts.o                53
+    xprintflarge.o     2 858
+    xprout.o              22
+    ------------------------------------------
+    Total:             3 027
+
+m7M_tl.a: [4]
+    DblAdd.o             212
+    DblCmpLe.o            46
+    DblDiv.o             582
+    DblMul.o             418
+    DblSub.o             384
+    DblToI32.o            44
+    I32ToDbl.o            28
+    xdnorm.o              66
+    ------------------------------------------
+    Total:             1 780
+
+rt7M_tl.a: [5]
+    ABImemcpy.o          118
+    I64DivMod.o          238
+    I64DivZer.o            2
+    XXexit.o              12
+    cexit.o               10
+    cmain.o               22
+    copy_init3.o          46
+    cstartup_M.o          12
+    data_init3.o          40
+    memchr.o              88
+    strchr.o              22
+    strlen.o              54
+    zero_init3.o          34
+    ------------------------------------------
+    Total:               698
+
+    Gaps                  23
+    Linker created                 38    8 192
+----------------------------------------------
+    Grand Total:       9 202      294    8 336
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.intvec$$Base           0x00080000          --   Gb  - Linker created -
+.intvec$$Limit          0x000800f4          --   Gb  - Linker created -
+?main                   0x0008244d         Code  Gb  cmain.o [5]
+ADC_Handler             0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+BusFault_Handler        0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+Button1_Handler         0x0008171f   0x10  Code  Lc  main.o [1]
+Button2_Handler         0x0008172f   0x12  Code  Lc  main.o [1]
+CAN0_Handler            0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+CAN1_Handler            0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+CSTACK$$Base            0x20070090          --   Gb  - Linker created -
+CSTACK$$Limit           0x20072090          --   Gb  - Linker created -
+DACC_Handler            0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+DMAC_Handler            0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+DebugMon_Handler        0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+Dummy_Handler           0x00080cbb    0x2  Code  Gb  exceptions.o [1]
+EFC0_Handler            0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+EFC1_Handler            0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+EMAC_Handler            0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+HSMCI_Handler           0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+HardFault_Handler       0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+MemManage_Handler       0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+NMI_Handler             0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+PIOA_Handler            0x000821fd    0x6  Code  Gb  pio_handler.o [1]
+PIOB_Handler            0x00082203    0x6  Code  Gb  pio_handler.o [1]
+PIOC_Handler            0x00082209    0x6  Code  Gb  pio_handler.o [1]
+PIOD_Handler            0x0008220f    0x6  Code  Gb  pio_handler.o [1]
+PIOE_Handler            0x00082215    0x6  Code  Gb  pio_handler.o [1]
+PIOF_Handler            0x0008221b    0x6  Code  Gb  pio_handler.o [1]
+PMC_Handler             0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+PWM_Handler             0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+PendSV_Handler          0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+ProcessButtonEvt        0x000816c5   0x50  Code  Lc  main.o [1]
+RSTC_Handler            0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+RTC_Handler             0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+RTT_Handler             0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+Region$$Table$$Base     0x000824d0          --   Gb  - Linker created -
+Region$$Table$$Limit    0x000824f4          --   Gb  - Linker created -
+Reset_Handler           0x0008243d    0x4  Code  Gb  startup_sam3x.o [1]
+SDRAMC_Handler          0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+SMC_Handler             0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+SPI0_Handler            0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+SPI1_Handler            0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+SSC_Handler             0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+SUPC_Handler            0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+SVC_Handler             0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+SysTick_Handler         0x00081715    0xa  Code  Gb  main.o [1]
+SystemCoreClock         0x20070008    0x4  Data  Gb  system_sam3x.o [1]
+SystemCoreClockUpdate   0x000822b1   0xb4  Code  Gb  system_sam3x.o [1]
+TC0_Handler             0x00081741   0x1e  Code  Gb  main.o [1]
+TC1_Handler             0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+TC2_Handler             0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+TC3_Handler             0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+TC4_Handler             0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+TC5_Handler             0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+TC6_Handler             0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+TC7_Handler             0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+TC8_Handler             0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+TRNG_Handler            0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+TWI0_Handler            0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+TWI1_Handler            0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+UART_Handler            0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+UOTGHS_Handler          0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+USART0_Handler          0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+USART1_Handler          0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+USART2_Handler          0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+USART3_Handler          0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+UsageFault_Handler      0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+WDT_Handler             0x00080cbb    0x2  Code  Wk  exceptions.o [1]
+_GenldLarge             0x0008098b  0x24a  Code  Lc  xprintflarge.o [3]
+_LdtobLarge             0x0008070d  0x278  Code  Lc  xprintflarge.o [3]
+_LitobLarge             0x000805f7  0x10e  Code  Lc  xprintflarge.o [3]
+_PrintfLarge            0x000800f5  0x4fc  Code  Gb  xprintflarge.o [3]
+_Prout                  0x000824f5   0x16  Code  Gb  xprout.o [3]
+_PutcharsLarge          0x00080bd5   0x2e  Code  Lc  xprintflarge.o [3]
+__aeabi_cdcmple         0x00080ebd         Code  Gb  DblCmpLe.o [4]
+__aeabi_d2uiz           0x000812d9         Code  Gb  DblToI32.o [4]
+__aeabi_ddiv            0x00081091         Code  Gb  DblDiv.o [4]
+__aeabi_dmul            0x00080eed         Code  Gb  DblMul.o [4]
+__aeabi_dsub            0x00081321         Code  Gb  DblSub.o [4]
+__aeabi_ldiv0           0x000814b1         Code  Gb  I64DivZer.o [5]
+__aeabi_memcpy          0x00080e05         Code  Gb  ABImemcpy.o [5]
+__aeabi_memcpy4         0x00080e25         Code  Gb  ABImemcpy.o [5]
+__aeabi_memcpy8         0x00080e25         Code  Gb  ABImemcpy.o [5]
+__aeabi_ui2d            0x00081305         Code  Gb  I32ToDbl.o [4]
+__aeabi_uldivmod        0x00080d15         Code  Gb  I64DivMod.o [5]
+__cmain                 0x0008244d         Code  Gb  cmain.o [5]
+__exit                  0x0008249d         Code  Gb  XXexit.o [5]
+__iar_Dnorm             0x00080e7b   0x42  Code  Gb  xdnorm.o [4]
+__iar_Memchr            0x00080cbd         Code  Gb  memchr.o [5]
+__iar_Strchr            0x00080c4d         Code  Gb  strchr.o [5]
+__iar_copy_init3        0x00080c1f   0x2e  Code  Gb  copy_init3.o [5]
+__iar_d2uiz             0x000812e5         Code  Gb  DblToI32.o [4]
+__iar_dadd              0x000814b5         Code  Gb  DblAdd.o [4]
+__iar_data_init3        0x00082465   0x28  Code  Gb  data_init3.o [5]
+__iar_dsub              0x00081335         Code  Gb  DblSub.o [4]
+__iar_dsubStart         0x00081347         Code  Gb  DblSub.o [4]
+__iar_program_start     0x00082441         Code  Gb  cstartup_M.o [5]
+__iar_ui2d              0x00081309         Code  Gb  I32ToDbl.o [4]
+__iar_zero_init3        0x00080c63   0x22  Code  Gb  zero_init3.o [5]
+__low_level_init        0x00082411   0x20  Code  Gb  startup_sam3x.o [1]
+__region_NFC_RAM_end__ {Abs}
+                        0x20100fff          --   Gb  command line/config [2]
+__region_NFC_RAM_start__ {Abs}
+                        0x20100000          --   Gb  command line/config [2]
+__region_RAM0_end__ {Abs}
+                        0x2000ffff          --   Gb  command line/config [2]
+__region_RAM0_size__ {Abs}
+                        0x00010000          --   Gb  command line/config [2]
+__region_RAM0_start__ {Abs}
+                        0x20000000          --   Gb  command line/config [2]
+__region_RAM1_end__ {Abs}
+                        0x20087fff          --   Gb  command line/config [2]
+__region_RAM1_size__ {Abs}
+                        0x00008000          --   Gb  command line/config [2]
+__region_RAM1_start__ {Abs}
+                        0x20080000          --   Gb  command line/config [2]
+__region_RAM_end__ {Abs}
+                        0x20087fff          --   Gb  command line/config [2]
+__region_RAM_size__ {Abs}
+                        0x00018000          --   Gb  command line/config [2]
+__region_RAM_start__ {Abs}
+                        0x20070000          --   Gb  command line/config [2]
+__region_ROM_end__ {Abs}
+                        0x000fffff          --   Gb  command line/config [2]
+__region_ROM_size__ {Abs}
+                        0x00080000          --   Gb  command line/config [2]
+__region_ROM_start__ {Abs}
+                        0x00080000          --   Gb  command line/config [2]
+__vector_table          0x00080000   0xf4  Data  Gb  startup_sam3x.o [1]
+__write                 0x000823d5   0x3c  Code  Gb  write.o [1]
+_call_main              0x00082459         Code  Gb  cmain.o [5]
+_exit                   0x00082491         Code  Gb  cexit.o [5]
+_main                   0x0008245f         Code  Gb  cmain.o [5]
+board_init              0x000820ed   0x6c  Code  Gb  init.o [1]
+div                     0x000814a1    0xe  Code  Gb  div.o [3]
+exit                    0x0008248d    0x4  Code  Gb  exit.o [3]
+g_b_led0_active         0x20070000    0x1  Data  Gb  main.o [1]
+g_b_led1_active         0x20070001    0x1  Data  Gb  main.o [1]
+g_ul_ms_ticks           0x20070004    0x4  Data  Gb  main.o [1]
+gs_interrupt_sources    0x2007000c   0x70  Data  Lc  pio_handler.o [1]
+gs_ul_nb_sources        0x2007007c    0x4  Data  Lc  pio_handler.o [1]
+main                    0x0008175f  0x16e  Code  Gb  main.o [1]
+memchr                  0x00080cbd         Code  Gb  memchr.o [5]
+osc_enable              0x00082049   0x3a  Code  Lc  sysclk.o [1]
+osc_wait_ready          0x00082083   0x28  Code  Lc  sysclk.o [1]
+pio_configure_interrupt
+                        0x00081ded   0x26  Code  Gb  pio.o [1]
+pio_configure_pin       0x00081e71   0x82  Code  Gb  pio.o [1]
+pio_configure_pin_group
+                        0x00081f03   0x76  Code  Gb  pio.o [1]
+pio_disable_interrupt   0x00081e19    0x4  Code  Gb  pio.o [1]
+pio_enable_interrupt    0x00081e13    0x6  Code  Gb  pio.o [1]
+pio_get_interrupt_mask  0x00081e21    0x4  Code  Gb  pio.o [1]
+pio_get_interrupt_status
+                        0x00081e1d    0x4  Code  Gb  pio.o [1]
+pio_handler_process     0x00082191   0x3e  Code  Gb  pio_handler.o [1]
+pio_handler_set         0x000821cf   0x2e  Code  Gb  pio_handler.o [1]
+pio_handler_set_priority
+                        0x00082221   0x5e  Code  Gb  pio_handler.o [1]
+pio_pull_up             0x00081d3d    0xa  Code  Gb  pio.o [1]
+pio_set_debounce_filter
+                        0x00081d47   0x1a  Code  Gb  pio.o [1]
+pio_set_input           0x00081d97   0x2e  Code  Gb  pio.o [1]
+pio_set_output          0x00081dc5   0x28  Code  Gb  pio.o [1]
+pio_set_peripheral      0x00081d61   0x36  Code  Gb  pio.o [1]
+pio_set_pin_high        0x00081e25   0x16  Code  Gb  pio.o [1]
+pio_set_pin_low         0x00081e3b   0x16  Code  Gb  pio.o [1]
+pio_toggle_pin          0x00081e51   0x20  Code  Gb  pio.o [1]
+pmc_disable_pllack      0x00081b79    0xc  Code  Gb  pmc.o [1]
+pmc_enable_periph_clk   0x00081b8f   0x32  Code  Gb  pmc.o [1]
+pmc_is_locked_pllack    0x00081b85    0xa  Code  Gb  pmc.o [1]
+pmc_osc_is_ready_32kxtal
+                        0x00081ac7   0x18  Code  Gb  pmc.o [1]
+pmc_osc_is_ready_mainck
+                        0x00081b6d    0xc  Code  Gb  pmc.o [1]
+pmc_switch_mainck_to_fastrc
+                        0x00081adf   0x52  Code  Gb  pmc.o [1]
+pmc_switch_mainck_to_xtal
+                        0x00081b31   0x3c  Code  Gb  pmc.o [1]
+pmc_switch_mck_to_pllack
+                        0x00081a65   0x42  Code  Gb  pmc.o [1]
+pmc_switch_sclk_to_32kxtal
+                        0x00081aa7   0x20  Code  Gb  pmc.o [1]
+printf                  0x00082025   0x24  Code  Gb  printf.o [3]
+ptr_get                 0x20070088    0x4  Data  Gb  read.o [1]
+ptr_put                 0x20070084    0x4  Data  Gb  write.o [1]
+putchar                 0x000824a9   0x28  Code  Gb  putchar.o [3]
+puts                    0x00082159   0x34  Code  Gb  puts.o [3]
+stdio_base              0x20070080    0x4  Data  Gb  write.o [1]
+strchr                  0x00080c4d         Code  Gb  strchr.o [5]
+strlen                  0x00080c85         Code  Gb  strlen.o [5]
+sysclk_init             0x000820b3   0x2e  Code  Gb  sysclk.o [1]
+system_init_flash       0x00082365   0x3a  Code  Gb  system_sam3x.o [1]
+tc_enable_interrupt     0x00081fa9    0x8  Code  Gb  tc.o [1]
+tc_find_mck_divisor     0x00081fb9   0x58  Code  Gb  tc.o [1]
+tc_get_status           0x00081fb1    0x8  Code  Gb  tc.o [1]
+tc_init                 0x00081f7d   0x14  Code  Gb  tc.o [1]
+tc_start                0x00081f91    0x8  Code  Gb  tc.o [1]
+tc_stop                 0x00081f99    0x8  Code  Gb  tc.o [1]
+tc_write_rc             0x00081fa1    0x8  Code  Gb  tc.o [1]
+uart_init               0x00081bf9   0x30  Code  Gb  uart.o [1]
+uart_read               0x00081c39   0x12  Code  Gb  uart.o [1]
+uart_write              0x00081c29   0x10  Code  Gb  uart.o [1]
+usart_enable_rx         0x00081cf9    0x6  Code  Gb  usart.o [1]
+usart_enable_tx         0x00081cf3    0x6  Code  Gb  usart.o [1]
+usart_init_rs232        0x00081cad   0x34  Code  Gb  usart.o [1]
+usart_read              0x00081d1d    0xc  Code  Gb  usart.o [1]
+usart_reset             0x00081c8d   0x20  Code  Gb  usart.o [1]
+usart_serial_getchar    0x0008165b   0x62  Code  Lc  main.o [1]
+usart_serial_init       0x00081589   0x7e  Code  Lc  main.o [1]
+usart_serial_putchar    0x00081607   0x54  Code  Lc  main.o [1]
+usart_set_async_baudrate
+                        0x00081c4d   0x40  Code  Lc  usart.o [1]
+usart_write             0x00081d07    0xc  Code  Gb  usart.o [1]
+
+
+[1] = E:\_PY\_work\_GPS\asf-3.7.3\sam\applications\getting-started\sam3x8h_sam3x_ek\iar\Debug\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = m7M_tl.a
+[5] = rt7M_tl.a
+
+  9 202 bytes of readonly  code memory
+    294 bytes of readonly  data memory
+  8 336 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
